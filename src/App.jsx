@@ -126,6 +126,41 @@ const charClasses = [
   }
 ]
 
+const dungeonPool = [
+  {
+    name: 'Cinderbrew Meadery',
+    value:'brew',
+  },
+  {
+    name: 'Darkflame Cleft',
+    value:'dfc',
+  },
+  {
+    name: 'Priory of the Sacred Flame',
+    value:'psf',
+  },
+  {
+    name: 'The Rookery',
+    value:'rook',
+  },
+  {
+    name: 'Operation: Floodgate',
+    value:'fg',
+  },
+  {
+    name: 'Theater of Pain',
+    value:'top',
+  },
+  {
+    name: 'The MOTHERLODE!!',
+    value:'ml',
+  },
+  {
+    name: 'Operation: Mechagon - Workshop',
+    value:'work',
+  },
+]
+
 function App() {
   const [ activeSpec, setActiveSpec ] = useState()
   const [ specOptions, setSpecOptions ] = useState([])
@@ -152,8 +187,8 @@ function App() {
   }, [])
 
   useEffect(()=>{
-    // console.log("so", specOptions)
-  }, [specOptions])
+    console.log(activeSpec)
+  }, [activeSpec])
 
   useEffect(()=>{
     console.log(targetItems)
@@ -173,12 +208,13 @@ function App() {
   }
 
   const onClick = (e)=>{
-    const newItem = e.target.id
-    console.log( newItem, targetItems, targetItems.includes(newItem))
-    if (targetItems.includes(newItem) === false) {
-      setTargetItems([...targetItems, newItem])
+    const targetItem = e.target.id
+    if (targetItems.includes(targetItem) === false) {
+      console.log(`Adding "${targetItem}"`)
+      setTargetItems([...targetItems, targetItem])
     } else {
-      setTargetItems([...targetItems.filter(i => i !== newItem)])
+      console.log(`Removing "${targetItem}"`)
+      setTargetItems([...targetItems.filter(i => i !== targetItem)])
     }
   }
 
