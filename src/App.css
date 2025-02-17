@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.equipmentContainer {
+  padding: 10px 20px;
+}
+
 .equipSlotGroup {
   display: flex;
   flex-flow: row nowrap;
@@ -17,12 +28,14 @@
 .equipSlotIcon {
   width: 30px;
   height: 30px;
-  margin: 6px 11px 1px 1px;
+  margin: 5px 10px 0 0;
+  box-sizing:border-box
 }
 
 .equipSlotIcon .active {
   margin: 5px 10px 0 0;
   border: 1px solid cyan;
+  box-sizing:border-box
 }
 
 .equipSlotLabel {
@@ -37,7 +50,11 @@
   color: #fff;
 }
 
-
 .active {
   border: 1px solid cyan;
+}
+
+
+.dungeonContainer {
+  padding: 10px 30px;
 }

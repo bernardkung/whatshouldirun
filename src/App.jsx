@@ -238,6 +238,14 @@ function App() {
     )
   })
 
+  const dungeonDivs = dungeonPool.map((dungeon, d)=>{
+    return (
+      <div key={d} className={'dungeonGroup'}>
+        {dungeon.name}
+      </div>
+    )
+  })
+
 
   // App Body
   return (
@@ -248,8 +256,19 @@ function App() {
       <select id="charClassSpinner" onInput={onChange}>
         { specOptionsDivs }
       </select>
-      <p>I am looking for</p>
-      { equipmentDivs }
+      <div className={'container'}>
+        <div className={'equipmentContainer'}>
+          <p>I am looking for</p>
+          { equipmentDivs }
+        </div>
+
+        <div className={'dungeonContainer'}>
+          <p>I should run</p>
+          { dungeonDivs }
+        </div>
+
+
+      </div>
 
 
     </>
