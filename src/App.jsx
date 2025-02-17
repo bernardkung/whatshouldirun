@@ -1,33 +1,221 @@
-import { useState } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const equipmentTypes = [
+  'head',
+  'neck',
+  'shoulders',
+  'back',
+  'chest',
+  'wrists',
+  'hands',
+  'waist',
+  'legs',
+  'feet',
+  'finger',
+  'trinket',
+  'mainhand',
+  'offhand',
+]
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+const charClasses = [
+  {
+      "class": "shaman",
+      "specializations": [
+          "restoration",
+          "elemental",
+          "enhancement"
+      ]
+  },
+  {
+      "class": "death_knight",
+      "specializations": [
+          "blood",
+          "frost",
+          "unholy"
+      ]
+  },
+  {
+      "class": "hunter",
+      "specializations": [
+          "beast_mastery",
+          "marksmanship",
+          "survival"
+      ]
+  },
+  {
+      "class": "monk",
+      "specializations": [
+          "windwalker",
+          "mistweaver",
+          "brewmaster"
+      ]
+  },
+  {
+      "class": "priest",
+      "specializations": [
+          "holy",
+          "shadow",
+          "discipline"
+      ]
+  },
+  {
+      "class": "warlock",
+      "specializations": [
+          "demonology",
+          "destruction",
+          "affliction"
+      ]
+  },
+  {
+      "class": "warrior",
+      "specializations": [
+          "arms",
+          "fury",
+          "protection"
+      ]
+  },
+  {
+      "class": "paladin",
+      "specializations": [
+          "holy",
+          "retribution",
+          "protection"
+      ]
+  },
+  {
+      "class": "evoker",
+      "specializations": [
+          "augmentation",
+          "preservation"
+      ]
+  },
+  {
+      "class": "demon_hunter",
+      "specializations": [
+          "havoc",
+          "vengeance"
+      ]
+  },
+  {
+      "class": "druid",
+      "specializations": [
+          "guardian",
+          "feral",
+          "balance",
+          "restoration"
+      ]
+  },
+  {
+      "class": "mage",
+      "specializations": [
+          "arcane",
+          "frost",
+          "fire"
+      ]
+  },
+  {
+      "class": "rogue",
+      "specializations": [
+          "assassination",
+          "outlaw",
+          "subtlety"
+      ]
+  }
+]
+
+function App() {
+  const [ activeSpec, setActiveSpec ] = useState()
+  const [ specOptions, setSpecOptions ] = useState([])
+  const [ targetItems, setTargetItems ] = useState([])
+
+  // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
+
+  const prettifyText = (inStr) => {
+    // Split on dash, and capitalize each word
+    return inStr.split("_").map((word, w)=>{
+      return String(word).charAt(0).toUpperCase() + String(word).slice(1)
+    }).join(" ") 
+  }
+
+  useEffect(()=>{
+    setSpecOptions(
+      charClasses.map((charClass, c)=>{
+        const classSpecs = charClass['specializations']
+        return classSpecs.map(( spec, s ) => { 
+          return `${spec}_${charClass['class']}` 
+        })
+      }).flat()
+    )
+  }, [])
+
+  useEffect(()=>{
+    // console.log("so", specOptions)
+  }, [specOptions])
+
+  useEffect(()=>{
+    console.log(targetItems)
+  }, [targetItems])
+
+
+  const specOptionsDivs = specOptions.map((spec,s)=>{
+    return (
+      <option value={ spec } key={s} >
+        { prettifyText(spec) }
+      </option>
+    )
+  })
+
+  const onChange = (e)=>{
+    setActiveSpec(e.target.value)
+  }
+
+  const onClick = (e)=>{
+    const newItem = e.target.id
+    console.log( newItem, targetItems, targetItems.includes(newItem))
+    if (targetItems.includes(newItem) === false) {
+      setTargetItems([...targetItems, newItem])
+    } else {
+      setTargetItems([...targetItems.filter(i => i !== newItem)])
+    }
+  }
+
+  const equipmentDivs = equipmentTypes.map((equipmentType, e)=>{
+    return (
+      <div key={e} className={'equipSlotGroup'}>
+        <img 
+          key={`img${e}`} 
+          src={`/images/equipment_slots/Ui-paperdoll-slot-${equipmentType}.webp`}
+          id={equipmentType}
+          onClick={onClick}
+          className={ `equipSlotIcon ${targetItems.includes(equipmentType) ? 'active' : ''}` }
+        ></img>
+        <p 
+          key={e} 
+          className={`${targetItems.includes(equipmentType) ? 'equipSlotLabel-active' : 'equipSlotLabel'}`}
+        >
+          { equipmentType }
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    )
+  })
+
+
+  // App Body
+  return (
+    <>
+      <p>What Should I Run?</p>
+      
+      <label id="charClassSpinnerLabel">I'm playing a </label>
+      <select id="charClassSpinner" onInput={onChange}>
+        { specOptionsDivs }
+      </select>
+      <p>I am looking for</p>
+      { equipmentDivs }
+
+
     </>
   )
 }
