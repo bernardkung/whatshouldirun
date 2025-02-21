@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0.2rem;
   text-align: center;
@@ -108,6 +108,7 @@ h2 {
 .dungeonContainer {
   margin: 10px;
   padding: 10px 20px;
+  width: 100%;
   background-color: #272727;
   border-radius: 5px;
   filter: drop-shadow(5px 5px 10px #1b1b1b);
@@ -117,7 +118,8 @@ h2 {
   position: relative;
   display: block;
   color: #fff;
-  height: 100px;
+  width: 100%;
+  /* height: 100px; */
   background-color: #272727;
   margin-bottom: 10px;
   filter: drop-shadow(5px 5px 10px #1b1b1b);
@@ -127,9 +129,10 @@ h2 {
 .dungeonGroupBanner {
   display: block;
   object-fit: cover;
-  width: 400px;
+  width: 100%;
   height: 40px;
   margin: 0px;
+  border-radius: 5px;
   -webkit-mask-image: linear-gradient(#000000, transparent);
   mask-image: linear-gradient(#000000, transparent);
 }
@@ -138,11 +141,41 @@ h2 {
   position: absolute;
   width: 400px;
   height: 40px;
-  top: -13px;
+  top: -11px;
   left: 10px;
   text-align: left;
   font-weight: 600;
   color: #ececec;
   text-shadow: 2px 2px 2px #000000;
   /* margin-left: 15px; */
+}
+
+.lootGroup {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.lootItem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.lootIcon {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.lootName {
+  margin: 0;
+  padding: 0;
 }

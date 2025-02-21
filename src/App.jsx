@@ -169,6 +169,7 @@ function App() {
   const [ activeSpec, setActiveSpec ] = useState()
   const [ specOptions, setSpecOptions ] = useState([])
   const [ targetItems, setTargetItems ] = useState([])
+  const [ excludeItems, setExcludeItems ] = useState(equipmentTypes)
 
   // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
   
@@ -203,14 +204,6 @@ function App() {
 
   //////////////////////////// EFFECTS ////////////////////////////
   useEffect(()=>{
-    // setSpecOptions(
-    //   charClasses.map((charClass, c)=>{
-    //     const classSpecs = charClass['specializations']
-    //     return classSpecs.map(( spec, s ) => { 
-    //       return `${spec}_${charClass['class']}` 
-    //     })
-    //   }).flat()
-    // )
     setSpecOptions(
       specs.map((charClass, c)=>{
         const classSpecs = charClass['specialization']
@@ -222,17 +215,18 @@ function App() {
   }, [])
   
   useEffect(()=>{
-    console.log(activeSpec)
     if (activeSpec) {
       const activeId =`${activeSpec['specName']}_${activeSpec['className']}`
-      // console.log(activeId)
     }
-    
   }, [activeSpec])
 
   useEffect(()=>{
-    console.log(targetItems)
+    // console.log(targetItems)
   }, [targetItems])
+
+  useEffect(()=>{
+    // console.log(excludeItems)
+  }, [excludeItems])
 
 
 
@@ -243,16 +237,21 @@ function App() {
 
   const onClick = (e)=>{
     const targetItem = e.target.id
+    // Update targetItems
     if (targetItems.includes(targetItem) === false) {
       setTargetItems([...targetItems, targetItem])
     } else {
       setTargetItems([...targetItems.filter(i => i !== targetItem)])
     }
+    // Update excludeItems
+    if (excludeItems.includes(targetItem) === false) {
+      setExcludeItems([...excludeItems, targetItem])
+    } else {
+      setExcludeItems([...excludeItems.filter(i => i !== targetItem)])
+    }
   }
   
-  const onSpecClick = (e)=>{
-    // console.log(e.target.id)
-    
+  const onSpecClick = (e)=>{    
     setActiveSpec(findClassSpec(e.target.id))
   }
 
@@ -331,32 +330,59 @@ function App() {
   })
 
   function getLootPool(dungeon) {
-    // Get loot which matches the dungeon, targetItems, mainStat, and role
-    
-    // if no targetItems selected, show all
+    // Get loot which matches the dungeon & targetItems, mainStat, and role
 
-    // if no activeSpec selected
+    // filter for dungeon
+    function dungeonFilter(item) {
+      return item['dungeon'] === dungeon['value']
+    }
+
+    // if no targetItems selected, show all
+    function targetItemsFilter(item) {
+      return targetItems.length === 0 || targetItems.includes(item['slot'])
+    }
+
+    // if activeSpec selected, item must match mainStat and role
+    function specFilter(item) {
+      return !activeSpec || (item['main_stat'].includes(activeSpec['mainStat']) && item['role'].includes(activeSpec['role']))
+    }
+
+    if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
+      loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
+        console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
+        console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
+      })
+    }
+
+    const lootPool = loot.filter((item, i)=>{
+      return dungeonFilter(item) && targetItemsFilter(item) && specFilter(item)
+    })
+
+    return lootPool
   }
 
   const dungeonDivs = dungeonPool.map((dungeon, d)=>{
-    // Determine dungeon loot pool based on spec and items
-    // const lootPool = loot.filter((item, i)=>{
-    //   return item['dungeon'] === dungeon['value'] 
-    //     && targetItems.includes(item['slot'])
-    //     && item['role'].includes(activeSpec['role'])
-    //     && item['main_stat'].includes(activeSpec['mainStat'])
-    //     && item['category']===activeSpec['armor']
-    // })
-    // console.log(dungeon['value'], activeSpec['role'], targetItems, activeSpec['mainStat'])
+    
+    const lootPool = getLootPool(dungeon);
 
-    // if (dungeon['value']='brew') {
-    //   loot.map((item, i)=>{
-    //     console.log("item", item["dungeon"], item["slot"], item["role"], item["main_stat"])
-    //     console.log("targ", dungeon['value'], activeSpec['mainStat'], activeSpec['role'], targetItems)
-    //   })
-    // }
-
-    // console.log(dungeon['name'], lootPool)
+    const lootDivs = lootPool.map((item, i)=>{
+      return (
+        <div key={i} className={'lootItem'}>
+          <img 
+            key={`img${i}`} 
+            src={`/images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
+            alt={item['name']}
+            className={'lootIcon'}
+          ></img>
+          {/* <p 
+            key={`name${i}`} 
+            className={'lootName'}
+          >
+            { item['name'] }
+          </p> */}
+        </div>
+      )
+    })
 
     return (
       <div key={`group${d}`} className={'dungeonGroup'}>
@@ -372,15 +398,22 @@ function App() {
         >
           {dungeon.name}
         </p>
+        <div className={'lootGroup'}>
+          {lootDivs}
+        </div>
       </div>
     )
   })
+
+  function testFx(){
+    console.log(!activeSpec)
+  }
 
 
   // App Body
   return (
     <>
-      <h1><img className={'titleLogo'} src={'./thinking.svg'}/> What Should I Run? </h1>
+      <h1><img className={'titleLogo'} src={'./thinking.svg'} onClick={testFx}/> What Should I Run? </h1>
       
       <div className={'specContainer'}>
         {/* <label id="charClassSpinnerLabel">I'm playing a </label>
