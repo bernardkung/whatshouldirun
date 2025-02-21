@@ -104,14 +104,14 @@
         "role": "rdps",
         "armor": "mail",
         "mainStat": "agi",
-        "weapons": ["ranged"]
+        "weapons": ["2h_bow, 2h_gun, 2h_crossbow"]
       },
       {
         "specName": "marksmanship",
         "role": "rdps",
         "armor": "mail",
         "mainStat": "agi",
-        "weapons": ["ranged"]
+        "weapons": ["2h_bow, 2h_gun, 2h_crossbow"]
       },
       {
         "specName": "survival",

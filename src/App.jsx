@@ -18,8 +18,8 @@ const equipmentTypes = [
   'feet',
   'finger',
   'trinket',
-  'mainhand',
-  'offhand',
+  'main_hand',
+  'off_hand',
 ]
 
 const charClasses = [
@@ -332,27 +332,32 @@ function App() {
   function getLootPool(dungeon) {
     // Get loot which matches the dungeon & targetItems, mainStat, and role
 
-    // filter for dungeon
     function dungeonFilter(item) {
       return item['dungeon'] === dungeon['value']
     }
 
-    // if no targetItems selected, show all
     function targetItemsFilter(item) {
+      // if no targetItems selected, show all
       return targetItems.length === 0 || targetItems.includes(item['slot'])
     }
+    
+    function weaponFilter(item) {
+      // if activeSpec selected, weapon must be in class-compatible weapon list
+      return !activeSpec || activeSpec['weapons'].includes(item['type'])
+    }
 
-    // if activeSpec selected, item must match mainStat and role
     function specFilter(item) {
+      // if activeSpec selected, item must match mainStat and role
       return !activeSpec || (item['main_stat'].includes(activeSpec['mainStat']) && item['role'].includes(activeSpec['role']))
     }
 
-    if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
-      loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
-        console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
-        console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
-      })
-    }
+    // troubleshooting item filter
+    // if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
+    //   loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
+    //     console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
+    //     console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
+    //   })
+    // }
 
     const lootPool = loot.filter((item, i)=>{
       return dungeonFilter(item) && targetItemsFilter(item) && specFilter(item)
@@ -372,11 +377,13 @@ function App() {
             key={`img${i}`} 
             src={`/images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
             alt={item['name']}
+            id={item['id']}
             className={'lootIcon'}
           ></img>
           {/* <p 
             key={`name${i}`} 
             className={'lootName'}
+            id={item['id']}
           >
             { item['name'] }
           </p> */}

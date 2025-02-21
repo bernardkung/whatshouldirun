@@ -3172,7 +3172,7 @@
     "dungeon": "rook",
     "id": 221033,
     "category": "axe",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_axe",
     "role": [
       "tank",
@@ -3189,7 +3189,7 @@
     "dungeon": "dfc",
     "id": 221105,
     "category": "axe",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_axe",
     "role": [
       "tank",
@@ -3206,7 +3206,7 @@
     "dungeon": "brew",
     "id": 221068,
     "category": "axe",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_axe",
     "role": [
       "tank",
@@ -3223,7 +3223,7 @@
     "dungeon": "dfc",
     "id": 221096,
     "category": "axe",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_axe",
     "role": [
       "tank",
@@ -3240,7 +3240,7 @@
     "dungeon": "top",
     "id": 178863,
     "category": "axe",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_axe",
     "role": [
       "tank",
@@ -3257,7 +3257,7 @@
     "dungeon": "dfc",
     "id": 221110,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3274,7 +3274,7 @@
     "dungeon": "rook",
     "id": 221044,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3291,7 +3291,7 @@
     "dungeon": "fg",
     "id": 234493,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3308,7 +3308,7 @@
     "dungeon": "work",
     "id": 168962,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3325,7 +3325,7 @@
     "dungeon": "brew",
     "id": 221062,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3342,7 +3342,7 @@
     "dungeon": "top",
     "id": 178789,
     "category": "dagger",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_dagger",
     "role": [
       "tank",
@@ -3359,7 +3359,7 @@
     "dungeon": "brew",
     "id": 221051,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3376,7 +3376,7 @@
     "dungeon": "psf",
     "id": 221128,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3393,7 +3393,7 @@
     "dungeon": "top",
     "id": 178864,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3410,7 +3410,7 @@
     "dungeon": "rook",
     "id": 221046,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3427,7 +3427,7 @@
     "dungeon": "psf",
     "id": 221122,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3444,7 +3444,7 @@
     "dungeon": "work",
     "id": 168955,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3461,7 +3461,7 @@
     "dungeon": "ml",
     "id": 159641,
     "category": "mace",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_mace",
     "role": [
       "tank",
@@ -3478,7 +3478,7 @@
     "dungeon": "work",
     "id": 169608,
     "category": "sword",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_sword",
     "role": [
       "tank",
@@ -3495,7 +3495,7 @@
     "dungeon": "fg",
     "id": 234491,
     "category": "warglaives",
-    "slot": "1h_weapon",
+    "slot": "main_hand",
     "type": "1h_warglaives",
     "role": [
       "tank",
@@ -3512,7 +3512,7 @@
     "dungeon": "top",
     "id": 178866,
     "category": "axe",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_axe",
     "role": [
       "tank",
@@ -3529,7 +3529,7 @@
     "dungeon": "brew",
     "id": 221063,
     "category": "mace",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_mace",
     "role": [
       "tank",
@@ -3546,7 +3546,7 @@
     "dungeon": "rook",
     "id": 221038,
     "category": "mace",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_mace",
     "role": [
       "tank",
@@ -3563,7 +3563,7 @@
     "dungeon": "ml",
     "id": 159638,
     "category": "mace",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_mace",
     "role": [
       "tank",
@@ -3580,7 +3580,7 @@
     "dungeon": "psf",
     "id": 221116,
     "category": "polearm",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_polearm",
     "role": [
       "tank",
@@ -3597,7 +3597,7 @@
     "dungeon": "fg",
     "id": 234494,
     "category": "polearm",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_polearm",
     "role": [
       "tank",
@@ -3614,7 +3614,7 @@
     "dungeon": "top",
     "id": 178865,
     "category": "polearm",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_polearm",
     "role": [
       "tank",
@@ -3631,7 +3631,7 @@
     "dungeon": "dfc",
     "id": 221111,
     "category": "polearm",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_polearm",
     "role": [
       "tank",
@@ -3648,7 +3648,7 @@
     "dungeon": "brew",
     "id": 221057,
     "category": "staff",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_staff",
     "role": [
       "tank",
@@ -3665,7 +3665,7 @@
     "dungeon": "rook",
     "id": 221032,
     "category": "staff",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_staff",
     "role": [
       "tank",
@@ -3682,7 +3682,7 @@
     "dungeon": "work",
     "id": 168973,
     "category": "staff",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_staff",
     "role": [
       "tank",
@@ -3699,7 +3699,7 @@
     "dungeon": "psf",
     "id": 221127,
     "category": "sword",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_sword",
     "role": [
       "tank",
@@ -3716,7 +3716,7 @@
     "dungeon": "fg",
     "id": 234490,
     "category": "sword",
-    "slot": "2h_weapon",
+    "slot": "main_hand",
     "type": "2h_sword",
     "role": [
       "tank",
@@ -3733,8 +3733,8 @@
     "dungeon": "rook",
     "id": 221039,
     "category": "bow",
-    "slot": "ranged",
-    "type": "ranged",
+    "slot": "main_hand",
+    "type": "2h_bow",
     "role": [
       "tank",
       "heal",
@@ -3750,8 +3750,8 @@
     "dungeon": "fg",
     "id": 234492,
     "category": "gun",
-    "slot": "ranged",
-    "type": "ranged",
+    "slot": "main_hand",
+    "type": "2h_gun",
     "role": [
       "tank",
       "heal",
@@ -3767,8 +3767,8 @@
     "dungeon": "ml",
     "id": 159639,
     "category": "gun",
-    "slot": "ranged",
-    "type": "ranged",
+    "slot": "main_hand",
+    "type": "2h_gun",
     "role": [
       "tank",
       "heal",
@@ -3836,7 +3836,7 @@
     "id": 221117,
     "category": "shield",
     "slot": "off_hand",
-    "type": "off_hand",
+    "type": "shield",
     "role": [
       "tank",
       "heal",
@@ -3854,7 +3854,7 @@
     "id": 221045,
     "category": "shield",
     "slot": "off_hand",
-    "type": "off_hand",
+    "type": "shield",
     "role": [
       "tank",
       "heal",
@@ -3872,7 +3872,7 @@
     "id": 178867,
     "category": "shield",
     "slot": "off_hand",
-    "type": "off_hand",
+    "type": "shield",
     "role": [
       "tank",
       "heal",
@@ -3890,7 +3890,7 @@
     "id": 159663,
     "category": "shield",
     "slot": "off_hand",
-    "type": "off_hand",
+    "type": "shield",
     "role": [
       "tank",
       "heal",
