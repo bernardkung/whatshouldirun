@@ -1,0 +1,3905 @@
+[
+  {
+    "name": "Chef Chewie's Towel",
+    "dungeon": "brew",
+    "id": 221054,
+    "category": "accessory",
+    "slot": "back",
+    "type": "back",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Candlebearer's Shroud",
+    "dungeon": "dfc",
+    "id": 221109,
+    "category": "accessory",
+    "slot": "back",
+    "type": "back",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Electrician's Siphoning Filter",
+    "dungeon": "fg",
+    "id": 234507,
+    "category": "accessory",
+    "slot": "back",
+    "type": "back",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Trashmaster's Mantle",
+    "dungeon": "work",
+    "id": 199921,
+    "category": "accessory",
+    "slot": "back",
+    "type": "back",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Cloak of Questionable Intent",
+    "dungeon": "ml",
+    "id": 159287,
+    "category": "accessory",
+    "slot": "back",
+    "type": "back",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Strapped Rescue-Keg",
+    "dungeon": "brew",
+    "id": 221060,
+    "category": "accessory",
+    "slot": "neck",
+    "type": "neck",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Flickering Glowtorc",
+    "dungeon": "dfc",
+    "id": 221103,
+    "category": "accessory",
+    "slot": "neck",
+    "type": "neck",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "85-Year Tenure Ring",
+    "dungeon": "brew",
+    "id": 221198,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Wick's Golden Loop",
+    "dungeon": "dfc",
+    "id": 221099,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Radiant Necromancer's Band",
+    "dungeon": "psf",
+    "id": 221200,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Hoop of the Blighted",
+    "dungeon": "rook",
+    "id": 221197,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Ritual Bone Band",
+    "dungeon": "top",
+    "id": 178870,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Bloodoath Signet",
+    "dungeon": "top",
+    "id": 178871,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Fleshfused Circle",
+    "dungeon": "top",
+    "id": 178869,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Ring of Perpetual Conflict",
+    "dungeon": "top",
+    "id": 178872,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Footbomb Championship Ring",
+    "dungeon": "ml",
+    "id": 159462,
+    "category": "accessory",
+    "slot": "ring",
+    "type": "ring",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Cinderbrew-Soaked Cowl",
+    "dungeon": "brew",
+    "id": 221055,
+    "category": "cloth",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Elysian Flame Crown",
+    "dungeon": "psf",
+    "id": 221131,
+    "category": "cloth",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Inventor's Ingenious Trifocals",
+    "dungeon": "work",
+    "id": 235226,
+    "category": "cloth",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Moneymaking Businessmantle",
+    "dungeon": "brew",
+    "id": 221072,
+    "category": "cloth",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Photophobic Amice",
+    "dungeon": "dfc",
+    "id": 221115,
+    "category": "cloth",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Plague-Licked Amice",
+    "dungeon": "top",
+    "id": 178803,
+    "category": "cloth",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Shoulderguards of Fraying Sanity",
+    "dungeon": "work",
+    "id": 235812,
+    "category": "cloth",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Exquisitely Aerodynamic Shoulderpads",
+    "dungeon": "ml",
+    "id": 235418,
+    "category": "cloth",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Zealous Warden's Raiment",
+    "dungeon": "psf",
+    "id": 221126,
+    "category": "cloth",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Saboteur's Rubber Jacket",
+    "dungeon": "fg",
+    "id": 234496,
+    "category": "cloth",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Soulsewn Vestments",
+    "dungeon": "top",
+    "id": 178792,
+    "category": "cloth",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Petticoat of the Self-Stylized Azerite Baron",
+    "dungeon": "ml",
+    "id": 235420,
+    "category": "cloth",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gleamwax Shackles",
+    "dungeon": "dfc",
+    "id": 221104,
+    "category": "cloth",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Charged Rookfeather Wraps",
+    "dungeon": "rook",
+    "id": 221037,
+    "category": "cloth",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Contaminated Gauze Wristwraps",
+    "dungeon": "top",
+    "id": 178806,
+    "category": "cloth",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Hyperthread Wristwraps",
+    "dungeon": "work",
+    "id": 168989,
+    "category": "cloth",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Rixxa's Sweat-Wicking Cuffs",
+    "dungeon": "ml",
+    "id": 159240,
+    "category": "cloth",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Punctured Apiary Gloves",
+    "dungeon": "brew",
+    "id": 221067,
+    "category": "cloth",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "King's Malicious Clutches",
+    "dungeon": "dfc",
+    "id": 221108,
+    "category": "cloth",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Operator's Mitts",
+    "dungeon": "work",
+    "id": 168969,
+    "category": "cloth",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mine Rat's Handwarmers",
+    "dungeon": "ml",
+    "id": 159231,
+    "category": "cloth",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Honorbound Retainer's Sash",
+    "dungeon": "psf",
+    "id": 221121,
+    "category": "cloth",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Fallen Empress's Cord",
+    "dungeon": "top",
+    "id": 178804,
+    "category": "cloth",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Ringmaster's Cummerbund",
+    "dungeon": "work",
+    "id": 168958,
+    "category": "cloth",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Excavator's Safety Belt",
+    "dungeon": "ml",
+    "id": 159226,
+    "category": "cloth",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Ancient Hardened Legwraps",
+    "dungeon": "rook",
+    "id": 221050,
+    "category": "cloth",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Razorchoke Slacks",
+    "dungeon": "fg",
+    "id": 234495,
+    "category": "cloth",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Royal Attendant's Trousers",
+    "dungeon": "work",
+    "id": 168988,
+    "category": "cloth",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Rowdy Reveler's Legwraps",
+    "dungeon": "ml",
+    "id": 158350,
+    "category": "cloth",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Nonconductive Kill-o-Socks",
+    "dungeon": "fg",
+    "id": 234497,
+    "category": "cloth",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Hyperthread Boots",
+    "dungeon": "work",
+    "id": 168964,
+    "category": "cloth",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Deranged Alchemist's Slippers",
+    "dungeon": "ml",
+    "id": 159235,
+    "category": "cloth",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Helm of the Righteous Crusade",
+    "dungeon": "psf",
+    "id": 221125,
+    "category": "leather",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Waterworks Filtration Mask",
+    "dungeon": "fg",
+    "id": 234498,
+    "category": "leather",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mekgineer's Mindbending Headgear",
+    "dungeon": "work",
+    "id": 235224,
+    "category": "leather",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "High Altitude Turban",
+    "dungeon": "ml",
+    "id": 235419,
+    "category": "leather",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Fireproof Cinderbee Perch",
+    "dungeon": "brew",
+    "id": 221201,
+    "category": "leather",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mechanized Junkpads",
+    "dungeon": "fg",
+    "id": 234500,
+    "category": "leather",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Extravagant Epaulets",
+    "dungeon": "work",
+    "id": 235811,
+    "category": "leather",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Seraphic Wraps of the Ordained",
+    "dungeon": "psf",
+    "id": 221130,
+    "category": "leather",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Jerkin of Awakened Stone",
+    "dungeon": "rook",
+    "id": 221049,
+    "category": "leather",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Vest of Concealed Secrets",
+    "dungeon": "top",
+    "id": 178795,
+    "category": "leather",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Venture Co. Plenipotentiary Vest",
+    "dungeon": "ml",
+    "id": 235417,
+    "category": "leather",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Battle-Scarred Fisticuffs",
+    "dungeon": "brew",
+    "id": 221053,
+    "category": "leather",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Disturbed Kelp Wraps",
+    "dungeon": "fg",
+    "id": 234499,
+    "category": "leather",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Servo-Arm Bindings",
+    "dungeon": "ml",
+    "id": 158353,
+    "category": "leather",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Shimmering Glimclaws",
+    "dungeon": "dfc",
+    "id": 221102,
+    "category": "leather",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Tempestwind Handlers",
+    "dungeon": "rook",
+    "id": 221036,
+    "category": "leather",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Self-Sanitizing Handwraps",
+    "dungeon": "work",
+    "id": 168985,
+    "category": "leather",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Corrosive Handler's Gloves",
+    "dungeon": "ml",
+    "id": 159305,
+    "category": "leather",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Brewery Toiler's Waistband",
+    "dungeon": "brew",
+    "id": 221058,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gleamkeeper's Buckle",
+    "dungeon": "dfc",
+    "id": 221107,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Girdle of Shattered Dreams",
+    "dungeon": "top",
+    "id": 178805,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mad King's Sporran",
+    "dungeon": "work",
+    "id": 168986,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mekgineer's Championship Belt",
+    "dungeon": "work",
+    "id": 168957,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Unscrupulous Geologist's Belt",
+    "dungeon": "ml",
+    "id": 159725,
+    "category": "leather",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Shadowspawn Leggings",
+    "dungeon": "dfc",
+    "id": 221114,
+    "category": "leather",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Squallrider's Kilt",
+    "dungeon": "rook",
+    "id": 221042,
+    "category": "leather",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Fearless Challenger's Leggings",
+    "dungeon": "top",
+    "id": 178801,
+    "category": "leather",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Flame-Seared Leggings",
+    "dungeon": "work",
+    "id": 168968,
+    "category": "leather",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Backbreaking Bootstrappers",
+    "dungeon": "brew",
+    "id": 221071,
+    "category": "leather",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Stalwart Guardian's Boots",
+    "dungeon": "psf",
+    "id": 221120,
+    "category": "leather",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Vanquished Usurper's Footpads",
+    "dungeon": "top",
+    "id": 178797,
+    "category": "leather",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Machinist's Treasured Treads",
+    "dungeon": "work",
+    "id": 168975,
+    "category": "leather",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mercenary Miner's Boots",
+    "dungeon": "ml",
+    "id": 159336,
+    "category": "leather",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Azeroth's Greatest BEE.E.O.\" Cap",
+    "dungeon": "brew",
+    "id": 221070,
+    "category": "mail",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gloaming Visage",
+    "dungeon": "dfc",
+    "id": 221113,
+    "category": "mail",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Amphitheater Stalker's Hood",
+    "dungeon": "top",
+    "id": 178799,
+    "category": "mail",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Psychogenic Prognosticator's Lenses",
+    "dungeon": "work",
+    "id": 235223,
+    "category": "mail",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mole Knight's Grimemail",
+    "dungeon": "dfc",
+    "id": 221098,
+    "category": "mail",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Amice of Oblivion",
+    "dungeon": "rook",
+    "id": 221048,
+    "category": "mail",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Skystreak's Hidden Missiles",
+    "dungeon": "fg",
+    "id": 234503,
+    "category": "mail",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Crashguard Spaulders",
+    "dungeon": "ml",
+    "id": 235416,
+    "category": "mail",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Boltbreaker Armor",
+    "dungeon": "rook",
+    "id": 221041,
+    "category": "mail",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Bront's Singed Blastcoat",
+    "dungeon": "fg",
+    "id": 234502,
+    "category": "mail",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Triumphant Combatant's Chainmail",
+    "dungeon": "top",
+    "id": 178794,
+    "category": "mail",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Circuit-Linked Chainmail",
+    "dungeon": "work",
+    "id": 235810,
+    "category": "mail",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Shrapnel-Dampening Chestguard",
+    "dungeon": "ml",
+    "id": 235460,
+    "category": "mail",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "I'pa's Pale Aleguards",
+    "dungeon": "brew",
+    "id": 221059,
+    "category": "mail",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Consecrated Baron's Bindings",
+    "dungeon": "psf",
+    "id": 221124,
+    "category": "mail",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gold-Coated Superconductors",
+    "dungeon": "work",
+    "id": 168967,
+    "category": "mail",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Bindings of Enraged Earth",
+    "dungeon": "ml",
+    "id": 158357,
+    "category": "mail",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Holybound Grips",
+    "dungeon": "psf",
+    "id": 221119,
+    "category": "mail",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Grips of Overwhelming Beatings",
+    "dungeon": "top",
+    "id": 178798,
+    "category": "mail",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Swift Pneumatic Grips",
+    "dungeon": "work",
+    "id": 168971,
+    "category": "mail",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Linked Pummeler Grips",
+    "dungeon": "ml",
+    "id": 159357,
+    "category": "mail",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Scent-Strong Candlecord",
+    "dungeon": "dfc",
+    "id": 221101,
+    "category": "mail",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Portable Power Generator",
+    "dungeon": "fg",
+    "id": 234501,
+    "category": "mail",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Maniacal Monarch's Girdle",
+    "dungeon": "work",
+    "id": 168983,
+    "category": "mail",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Shalebiter Interlinked Chain",
+    "dungeon": "ml",
+    "id": 159361,
+    "category": "mail",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Pollen-Lugger Treads",
+    "dungeon": "brew",
+    "id": 221065,
+    "category": "mail",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Divine Pyrewalkers",
+    "dungeon": "psf",
+    "id": 221129,
+    "category": "mail",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Self-Repairing Cuisses",
+    "dungeon": "work",
+    "id": 168974,
+    "category": "mail",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Chemical Blaster's Legguards",
+    "dungeon": "ml",
+    "id": 158341,
+    "category": "mail",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gloomstomper's Sabatons",
+    "dungeon": "dfc",
+    "id": 221106,
+    "category": "mail",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Treads of the Galvanic Skysoarer",
+    "dungeon": "rook",
+    "id": 221035,
+    "category": "mail",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Boots of Shuddering Matter",
+    "dungeon": "top",
+    "id": 178796,
+    "category": "mail",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Regal Mekanospurs",
+    "dungeon": "work",
+    "id": 168982,
+    "category": "mail",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Waxsteel Greathelm",
+    "dungeon": "dfc",
+    "id": 221100,
+    "category": "plate",
+    "slot": "helm",
+    "type": "helm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Monstrosity's Gaze",
+    "dungeon": "rook",
+    "id": 221047,
+    "category": "plate",
+    "slot": "helm",
+    "type": "helm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Apogee Inventor's Goggles",
+    "dungeon": "work",
+    "id": 235222,
+    "category": "plate",
+    "slot": "head",
+    "type": "head",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Foam-Ridden Pauldrons",
+    "dungeon": "brew",
+    "id": 221052,
+    "category": "plate",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Reanimator's Pyreforged Shoulders",
+    "dungeon": "psf",
+    "id": 221203,
+    "category": "plate",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Unyielding Combatant's Pauldrons",
+    "dungeon": "top",
+    "id": 178802,
+    "category": "plate",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Skyscorcher Pauldrons",
+    "dungeon": "ml",
+    "id": 235415,
+    "category": "plate",
+    "slot": "shoulder",
+    "type": "shoulder",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Slashproof Business Plate",
+    "dungeon": "brew",
+    "id": 221069,
+    "category": "plate",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Muckdiver's Wading Plate",
+    "dungeon": "fg",
+    "id": 234506,
+    "category": "plate",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Abdominal Securing Chestguard",
+    "dungeon": "top",
+    "id": 178793,
+    "category": "plate",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Mechanized Plate Chasse",
+    "dungeon": "work",
+    "id": 235809,
+    "category": "plate",
+    "slot": "chest",
+    "type": "chest",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Fuzzy Cindercuffs",
+    "dungeon": "brew",
+    "id": 221064,
+    "category": "plate",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Flameforged Armguard",
+    "dungeon": "psf",
+    "id": 221118,
+    "category": "plate",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Pit Fighter's Wristguards",
+    "dungeon": "top",
+    "id": 178807,
+    "category": "plate",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Anodized Deflectors",
+    "dungeon": "work",
+    "id": 168978,
+    "category": "plate",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Stonefury Vambraces",
+    "dungeon": "ml",
+    "id": 158359,
+    "category": "plate",
+    "slot": "wrist",
+    "type": "wrist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Caliginous Claspers",
+    "dungeon": "dfc",
+    "id": 221112,
+    "category": "plate",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Jumpstarter's Scaffold-Scrapers",
+    "dungeon": "fg",
+    "id": 234504,
+    "category": "plate",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Gauntlets of Absolute Authority",
+    "dungeon": "work",
+    "id": 168980,
+    "category": "plate",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Power-Assisted Vicegrips",
+    "dungeon": "ml",
+    "id": 155864,
+    "category": "plate",
+    "slot": "hands",
+    "type": "hands",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Lightning-Conductor's Bands",
+    "dungeon": "rook",
+    "id": 221040,
+    "category": "plate",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Venture Contractor's Floodlight",
+    "dungeon": "fg",
+    "id": 234505,
+    "category": "plate",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Automatic Waist Tightener",
+    "dungeon": "work",
+    "id": 168976,
+    "category": "plate",
+    "slot": "waist",
+    "type": "waist",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Thunder-Clad Legguards",
+    "dungeon": "rook",
+    "id": 221034,
+    "category": "plate",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Galvanized Oxxein Legguards",
+    "dungeon": "top",
+    "id": 178800,
+    "category": "plate",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Heavy Alloy Legplates",
+    "dungeon": "work",
+    "id": 168966,
+    "category": "plate",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Leadplate Legguards",
+    "dungeon": "ml",
+    "id": 159451,
+    "category": "plate",
+    "slot": "legs",
+    "type": "legs",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Hops-Laden Greatboots",
+    "dungeon": "brew",
+    "id": 221061,
+    "category": "plate",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Devoted Plate Walkers",
+    "dungeon": "psf",
+    "id": 221123,
+    "category": "plate",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Pyroclastic Greatboots",
+    "dungeon": "work",
+    "id": 168972,
+    "category": "plate",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Sabatons of Rampaging Elements",
+    "dungeon": "ml",
+    "id": 159679,
+    "category": "plate",
+    "slot": "feet",
+    "type": "feet",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Cinderbrew Stein",
+    "dungeon": "brew",
+    "id": 219297,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Tome of Light's Devotion",
+    "dungeon": "psf",
+    "id": 219309,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Remnant of Darkness",
+    "dungeon": "dfc",
+    "id": 219307,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Signet of the Priory",
+    "dungeon": "psf",
+    "id": 219308,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Sigil of Algari Concordance",
+    "dungeon": "rook",
+    "id": 219295,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Conductor's Wax Whistle",
+    "dungeon": "dfc",
+    "id": 219304,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Charged Stormrook Plume",
+    "dungeon": "rook",
+    "id": 219294,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Azerokk's Resonating Heart",
+    "dungeon": "ml",
+    "id": 159612,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Ravenous Honey Buzzer",
+    "dungeon": "brew",
+    "id": 219298,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Improvised Seaforium Pacemaker",
+    "dungeon": "fg",
+    "id": 232541,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Grim Codex",
+    "dungeon": "top",
+    "id": 178811,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "K.U.-J.0.'s Flame Vents",
+    "dungeon": "work",
+    "id": 232546,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Modular Platinum Plating",
+    "dungeon": "work",
+    "id": 168965,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank"
+    ],
+    "main_stat": [
+      "agi",
+      "str"
+    ]
+  },
+  {
+    "name": "Viscera of Coalesced Hatred",
+    "dungeon": "top",
+    "id": 178808,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Razdunk's Big Red Button",
+    "dungeon": "ml",
+    "id": 159611,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "mdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Synergistic Brewterializer",
+    "dungeon": "brew",
+    "id": 219299,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Carved Blazikon Wax",
+    "dungeon": "dfc",
+    "id": 219305,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Bursting Lightshard",
+    "dungeon": "psf",
+    "id": 219310,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Entropic Skardyn Core",
+    "dungeon": "rook",
+    "id": 219296,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Gigazap's Zap-Cap",
+    "dungeon": "fg",
+    "id": 232545,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Soulletting Ruby",
+    "dungeon": "top",
+    "id": 178809,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "rdps",
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Burin of the Candle King",
+    "dungeon": "dfc",
+    "id": 219306,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Darkfuse Medichopper",
+    "dungeon": "fg",
+    "id": 232542,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Vial of Spectral Essence",
+    "dungeon": "top",
+    "id": 178810,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Ingenious Mana Battery",
+    "dungeon": "work",
+    "id": 169344,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "heal"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Ringing Ritual Mud",
+    "dungeon": "fg",
+    "id": 232543,
+    "category": "trinket",
+    "slot": "trinket",
+    "type": "trinket",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi",
+      "str",
+      "int"
+    ]
+  },
+  {
+    "name": "Hyperactive Stormclaw",
+    "dungeon": "rook",
+    "id": 221033,
+    "category": "axe",
+    "slot": "1h_weapon",
+    "type": "1h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Dark Zone Headtaker",
+    "dungeon": "dfc",
+    "id": 221105,
+    "category": "axe",
+    "slot": "1h_weapon",
+    "type": "1h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Profit Divider",
+    "dungeon": "brew",
+    "id": 221068,
+    "category": "axe",
+    "slot": "1h_weapon",
+    "type": "1h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Rail Rider's Bisector",
+    "dungeon": "dfc",
+    "id": 221096,
+    "category": "axe",
+    "slot": "1h_weapon",
+    "type": "1h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Gorestained Cleaver",
+    "dungeon": "top",
+    "id": 178863,
+    "category": "axe",
+    "slot": "1h_weapon",
+    "type": "1h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Crepuscular Carver",
+    "dungeon": "dfc",
+    "id": 221110,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Shadowskean of the Colossus",
+    "dungeon": "rook",
+    "id": 221044,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Geezle's Coercive Volt-ohmmeter",
+    "dungeon": "fg",
+    "id": 234493,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Apex Perforator",
+    "dungeon": "work",
+    "id": 168962,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Scalding Queenmaker's Shiv",
+    "dungeon": "brew",
+    "id": 221062,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Fleshcrafter's Knife",
+    "dungeon": "top",
+    "id": 178789,
+    "category": "dagger",
+    "slot": "1h_weapon",
+    "type": "1h_dagger",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Crusher of the Unsettled",
+    "dungeon": "brew",
+    "id": 221051,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Starforged Seraph's Mace",
+    "dungeon": "psf",
+    "id": 221128,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Gorebound Predator's Gavel",
+    "dungeon": "top",
+    "id": 178864,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Behemoth Kneebender",
+    "dungeon": "rook",
+    "id": 221046,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Hand of Beledar",
+    "dungeon": "psf",
+    "id": 221122,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Electrifying Cognitive Amplifier",
+    "dungeon": "work",
+    "id": 168955,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "G3T-00t",
+    "dungeon": "ml",
+    "id": 159641,
+    "category": "mace",
+    "slot": "1h_weapon",
+    "type": "1h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Tearing Sawtooth Blade",
+    "dungeon": "work",
+    "id": 169608,
+    "category": "sword",
+    "slot": "1h_weapon",
+    "type": "1h_sword",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Sonic Ka-BOOM!-erang",
+    "dungeon": "fg",
+    "id": 234491,
+    "category": "warglaives",
+    "slot": "1h_weapon",
+    "type": "1h_warglaives",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Dessia's Decimating Decapitator",
+    "dungeon": "top",
+    "id": 178866,
+    "category": "axe",
+    "slot": "2h_weapon",
+    "type": "2h_axe",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Hivebreaker's Dipper",
+    "dungeon": "brew",
+    "id": 221063,
+    "category": "mace",
+    "slot": "2h_weapon",
+    "type": "2h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Crashing Thunderhammer",
+    "dungeon": "rook",
+    "id": 221038,
+    "category": "mace",
+    "slot": "2h_weapon",
+    "type": "2h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Electro-Arm Bludgeoner",
+    "dungeon": "ml",
+    "id": 159638,
+    "category": "mace",
+    "slot": "2h_weapon",
+    "type": "2h_mace",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Glorious Defender's Poleaxe",
+    "dungeon": "psf",
+    "id": 221116,
+    "category": "polearm",
+    "slot": "2h_weapon",
+    "type": "2h_polearm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Gallytech Turbo-Tiller",
+    "dungeon": "fg",
+    "id": 234494,
+    "category": "polearm",
+    "slot": "2h_weapon",
+    "type": "2h_polearm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Xav's Pike of Authority",
+    "dungeon": "top",
+    "id": 178865,
+    "category": "polearm",
+    "slot": "2h_weapon",
+    "type": "2h_polearm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Poleaxe of Somber Fate",
+    "dungeon": "dfc",
+    "id": 221111,
+    "category": "polearm",
+    "slot": "2h_weapon",
+    "type": "2h_polearm",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Sticky Stirring Stick",
+    "dungeon": "brew",
+    "id": 221057,
+    "category": "staff",
+    "slot": "2h_weapon",
+    "type": "2h_staff",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Voltaic Stormcaller",
+    "dungeon": "rook",
+    "id": 221032,
+    "category": "staff",
+    "slot": "2h_weapon",
+    "type": "2h_staff",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Neural Synapse Enhancer",
+    "dungeon": "work",
+    "id": 168973,
+    "category": "staff",
+    "slot": "2h_weapon",
+    "type": "2h_staff",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Emberbrand Zweihander",
+    "dungeon": "psf",
+    "id": 221127,
+    "category": "sword",
+    "slot": "2h_weapon",
+    "type": "2h_sword",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Circuit Breaker",
+    "dungeon": "fg",
+    "id": 234490,
+    "category": "sword",
+    "slot": "2h_weapon",
+    "type": "2h_sword",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "str"
+    ]
+  },
+  {
+    "name": "Ireborne Stormbow",
+    "dungeon": "rook",
+    "id": 221039,
+    "category": "bow",
+    "slot": "ranged",
+    "type": "ranged",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Keeza's 'B.' B.B.B.F.G",
+    "dungeon": "fg",
+    "id": 234492,
+    "category": "gun",
+    "slot": "ranged",
+    "type": "ranged",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "P.A.C.I.F.I.S.T. Mk7",
+    "dungeon": "ml",
+    "id": 159639,
+    "category": "gun",
+    "slot": "ranged",
+    "type": "ranged",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Vessel of the Beverage",
+    "dungeon": "brew",
+    "id": 221056,
+    "category": "off-hand",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Arcane Scuttle",
+    "dungeon": "dfc",
+    "id": 221097,
+    "category": "off-hand",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int"
+    ]
+  },
+  {
+    "name": "Deathwalker's Promise",
+    "dungeon": "top",
+    "id": 178868,
+    "category": "off-hand",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "agi"
+    ]
+  },
+  {
+    "name": "Sanctified Priory Wall",
+    "dungeon": "psf",
+    "id": 221117,
+    "category": "shield",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int",
+      "str"
+    ]
+  },
+  {
+    "name": "Galebreaker Bulwark",
+    "dungeon": "rook",
+    "id": 221045,
+    "category": "shield",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int",
+      "str"
+    ]
+  },
+  {
+    "name": "Barricade of the Endless Empire",
+    "dungeon": "top",
+    "id": 178867,
+    "category": "shield",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int",
+      "str"
+    ]
+  },
+  {
+    "name": "G0-4W4Y Crowd Repeller",
+    "dungeon": "ml",
+    "id": 159663,
+    "category": "shield",
+    "slot": "off_hand",
+    "type": "off_hand",
+    "role": [
+      "tank",
+      "heal",
+      "mdps",
+      "rdps"
+    ],
+    "main_stat": [
+      "int",
+      "str"
+    ]
+  }
+]

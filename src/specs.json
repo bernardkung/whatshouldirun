@@ -1,0 +1,333 @@
+[
+  {
+    "className": "death_knight",
+    "specialization": [
+      {
+        "specName": "blood",
+        "role": "tank",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["2h_axe", "2h_mace", "2h_sword", "2h_polearm"]
+      },
+      {
+        "specName": "frost",
+        "role": "mdps",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["2h_axe", "2h_mace", "2h_sword", "2h_polearm", "1h_sword", "1h_axe", "1h_mace"]
+      },
+      {
+        "specName": "unholy",
+        "role": "mdps",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["2h_axe", "2h_mace", "2h_sword", "2h_polearm"]
+      }
+    ]
+  },
+  {
+    "className": "demon_hunter",
+    "specialization": [
+      {
+        "specName": "havoc",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_warglaives", "1h_fist", "1h_axe", "1h_sword"]
+      },
+      {
+        "specName": "vengeance",
+        "role": "tank",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_warglaives", "1h_fist", "1h_axe", "1h_sword"]
+      }
+    ]
+  },
+  {
+    "className": "druid",
+    "specialization": [
+      {
+        "specName": "guardian",
+        "role": "tank",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_dagger", "1h_fist", "1h_mace", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "feral",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_dagger", "1h_fist", "1h_mace", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "balance",
+        "role": "rdps",
+        "armor": "leather",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_mace", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "restoration",
+        "role": "heal",
+        "armor": "leather",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_mace", "2h_polearm", "2h_staff", "off_hand"]
+      }
+    ]
+  },
+  {
+    "className": "evoker",
+    "specialization": [
+      {
+        "specName": "augmentation",
+        "role": "rdps",
+        "armor": "mail",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_axe", "1h_mace", "1h_sword", "2h_staff"]
+      },
+      {
+        "specName": "preservation",
+        "role": "heal",
+        "armor": "mail",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_axe", "1h_mace", "1h_sword", "2h_staff"]
+      }
+    ]
+  },
+  {
+    "className": "hunter",
+    "specialization": [
+      {
+        "specName": "beast_mastery",
+        "role": "rdps",
+        "armor": "mail",
+        "mainStat": "agi",
+        "weapons": ["ranged"]
+      },
+      {
+        "specName": "marksmanship",
+        "role": "rdps",
+        "armor": "mail",
+        "mainStat": "agi",
+        "weapons": ["ranged"]
+      },
+      {
+        "specName": "survival",
+        "role": "mdps",
+        "armor": "mail",
+        "mainStat": "agi",
+        "weapons": ["2h_axe", "2h_staff", "2h_polearm"]
+      }
+    ]
+  },
+  {
+    "className": "mage",
+    "specialization": [
+      {
+        "specName": "arcane",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_sword", "2h_staff", "1h_dagger", "off_hand", "1h_wand"]
+      },
+      {
+        "specName": "frost",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_sword", "2h_staff", "1h_dagger", "off_hand", "1h_wand"]
+      },
+      {
+        "specName": "fire",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_sword", "2h_staff", "1h_dagger", "off_hand", "1h_wand"]
+      }
+    ]
+  },
+  {
+    "className": "monk",
+    "specialization": [
+      {
+        "specName": "windwalker",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "1h_fist", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "mistweaver",
+        "role": "heal",
+        "armor": "leather",
+        "mainStat": "int",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "1h_fist", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "brewmaster",
+        "role": "tank",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "1h_fist", "2h_polearm", "2h_staff"]
+      }
+    ]
+  },
+  {
+    "className": "paladin",
+    "specialization": [
+      {
+        "specName": "holy",
+        "role": "heal",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "2h_sword", "2h_axe", "2h_mace", "shield"]
+      },
+      {
+        "specName": "retribution",
+        "role": "mdps",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["2h_sword", "2h_axe", "2h_mace"]
+      },
+      {
+        "specName": "protection",
+        "role": "tank",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "shield"]
+      }
+    ]
+  },
+  {
+    "className": "priest",
+    "specialization": [
+      {
+        "specName": "holy",
+        "role": "heal",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_mace", "1h_dagger", "off_hand", "2h_staff", "1h_wand"]
+      },
+      {
+        "specName": "shadow",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_mace", "1h_dagger", "off_hand", "2h_staff", "1h_wand"]
+      },
+      {
+        "specName": "discipline",
+        "role": "heal",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_mace", "1h_dagger", "off_hand", "2h_staff", "1h_wand"]
+      }
+    ]
+  },
+  {
+    "className": "rogue",
+    "specialization": [
+      {
+        "specName": "assassination",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_dagger"]
+      },
+      {
+        "specName": "outlaw",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_sword", "1h_axe", "1h_mace", "1h_fist", "1h_dagger"]
+      },
+      {
+        "specName": "subtlety",
+        "role": "mdps",
+        "armor": "leather",
+        "mainStat": "agi",
+        "weapons": ["1h_dagger"]
+      }
+    ]
+  },
+  {
+    "className": "shaman",
+    "specialization": [
+      {
+        "specName": "restoration",
+        "role": "heal",
+        "armor": "mail",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_axe", "1h_mace", "shield"]
+      },
+      {
+        "specName": "elemental",
+        "role": "rdps",
+        "armor": "mail",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_fist", "1h_axe", "1h_mace", "shield"]
+      },
+      {
+        "specName": "enhancement",
+        "role": "mdps",
+        "armor": "mail",
+        "mainStat": "agi",
+        "weapons": ["1h_fist", "1h_axe", "1h_mace"]
+      }
+    ]
+  },
+  {
+    "className": "warlock",
+    "specialization": [
+      {
+        "specName": "demonology",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_sword", "2h_staff", "1h_wand", "off_hand"]
+      },
+      {
+        "specName": "destruction",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_sword", "2h_staff", "1h_wand", "off_hand"]
+      },
+      {
+        "specName": "affliction",
+        "role": "rdps",
+        "armor": "cloth",
+        "mainStat": "int",
+        "weapons": ["1h_dagger", "1h_sword", "2h_staff", "1h_wand", "off_hand"]
+      }
+    ]
+  },
+  {
+    "className": "warrior",
+    "specialization": [
+      {
+        "specName": "arms",
+        "role": "mdps",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["2h_sword", "2h_axe", "2h_mace", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "fury",
+        "role": "mdps",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["1h_dagger", "2h_sword", "2h_axe", "2h_mace", "2h_polearm", "2h_staff"]
+      },
+      {
+        "specName": "protection",
+        "role": "tank",
+        "armor": "plate",
+        "mainStat": "str",
+        "weapons": ["1h_dagger", "1h_fist", "1h_sword", "1h_axe", "1h_mace", "shield"]
+      }
+    ]
+  }
+]
