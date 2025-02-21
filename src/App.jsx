@@ -321,7 +321,7 @@ function App() {
         ></img>
         <p 
           key={e} 
-          className={`${targetItems.includes(equipmentType) ? 'equipSlotLabel-active' : 'equipSlotLabel'}`}
+          className={`${targetItems.includes(equipmentType) ? 'equipSlotLabel active' : 'equipSlotLabel'}`}
         >
           { equipmentType }
         </p>
@@ -343,7 +343,6 @@ function App() {
     
     function weaponFilter(item) {
       // if activeSpec selected, weapon must be in class-compatible weapon list
-      // not needed?
       return !activeSpec || activeSpec['weapons'].includes(item['type'])
     }
 
@@ -402,13 +401,13 @@ function App() {
       <div key={`group${d}`} className={'dungeonGroup'}>
         <img
           key={`banner${d}`}
-          className={'dungeonGroupBanner'}
+          className={`dungeonGroupBanner ${lootPool.length > 0 ? 'active' : 'inactive'}`}
           src={`/images/dungeons/${dungeon['value']}.png`}
         >
         </img>
         <p
           key={d}
-          className={'dungeonGroupTitle'}
+          className={`dungeonGroupTitle ${lootPool.length > 0 ? 'active' : 'inactive'}`}
         >
           {dungeon.name}
         </p>

@@ -1,8 +1,10 @@
-# React + Vite
+# What Should I Run?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Filterable loot table for World of Warcraft. Figure out which dungeons have the drop that fits your item slot and spec. Like Droptimizer, but dumber.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+# Notes
+Move dungeons to a State, which would be a list of dicts with dungeon_name, dungeon_code, and loot_table. This should allow sorting by length of loot_table.

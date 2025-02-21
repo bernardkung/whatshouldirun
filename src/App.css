@@ -79,6 +79,7 @@ h1 {
 .equipSlotIcon.active {
   margin: 5px 10px 0 0;
   border: 1px solid cyan;
+  border-radius: 3px;
   box-sizing:border-box
 }
 
@@ -88,15 +89,10 @@ h1 {
   color: #616161;
 }
 
-.equipSlotLabel-active {
+.equipSlotLabel.active {
   margin: 0;
   padding: 0;
   color: #fff;
-}
-
-.active {
-  border: 1px solid cyan;
-  border-radius: 3px;
 }
 
 h2 {
@@ -137,6 +133,10 @@ h2 {
   mask-image: linear-gradient(#000000, transparent);
 }
 
+.dungeonGroupBanner.inactive {
+  filter: grayscale(100%);
+}
+
 .dungeonGroupTitle {
   position: absolute;
   width: 400px;
@@ -150,6 +150,9 @@ h2 {
   /* margin-left: 15px; */
 }
 
+.dungeonGroupTitle.inactive {
+  color: #a3a3a3;
+}
 .lootGroup {
   display: flex;
   flex-flow: row wrap;
