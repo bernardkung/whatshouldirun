@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Cinderbrew Meadery",
+    "value":"brew"
+  },
+  {
+    "name": "Darkflame Cleft",
+    "value":"dfc"
+  },
+  {
+    "name": "Priory of the Sacred Flame",
+    "value":"psf"
+  },
+  {
+    "name": "The Rookery",
+    "value":"rook"
+  },
+  {
+    "name": "Operation: Floodgate",
+    "value":"fg"
+  },
+  {
+    "name": "Theater of Pain",
+    "value":"top"
+  },
+  {
+    "name": "The MOTHERLODE!!",
+    "value":"ml"
+  },
+  {
+    "name": "Operation: Mechagon - Workshop",
+    "value":"work"
+  }
+]

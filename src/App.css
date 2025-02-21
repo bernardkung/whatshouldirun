@@ -169,6 +169,7 @@ h2 {
   align-items: center;
   margin: 5px;
   padding: 5px;
+  position: relative;
 }
 
 .lootIcon {
@@ -176,9 +177,38 @@ h2 {
   height: 30px;
   margin: 0;
   box-sizing: border-box;
+  z-index: 0;
+}
+
+.lootTooltip {
+  display: block; 
+  visibility: visible;
+  position: absolute;
+  bottom: -20px;
+  max-width: 120px;
+  z-index: 1;
+  background-color: #272727;
+  border: 1px solid #ff4e89;
+  text-align: center;
+}
+
+.lootTooltip.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .lootName {
   margin: 0;
   padding: 0;
+  /* display: block; 
+  visibility: visible;
+  position: absolute;
+  bottom: -20px;
+  width: 340px;
+  z-index: 1; */
 }
+
+/* .lootName.inactive {
+  display: none;
+  visibility: hidden;
+} */

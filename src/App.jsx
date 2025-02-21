@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import loot from './tww_s2_loot.json'
 import specs from './specs.json'
+import charClasses from './class_specs.json'
+import dungeonPool from './tww_s2_dungeons.json'
 
 const equipmentTypes = [
   'head',
@@ -22,146 +24,6 @@ const equipmentTypes = [
   'off_hand',
 ]
 
-const charClasses = [
-  {
-      "class": "shaman",
-      "specializations": [
-          "restoration",
-          "elemental",
-          "enhancement"
-      ]
-  },
-  {
-      "class": "death_knight",
-      "specializations": [
-          "blood",
-          "frost",
-          "unholy"
-      ]
-  },
-  {
-      "class": "hunter",
-      "specializations": [
-          "beast_mastery",
-          "marksmanship",
-          "survival"
-      ]
-  },
-  {
-      "class": "monk",
-      "specializations": [
-          "windwalker",
-          "mistweaver",
-          "brewmaster"
-      ]
-  },
-  {
-      "class": "priest",
-      "specializations": [
-          "holy",
-          "shadow",
-          "discipline"
-      ]
-  },
-  {
-      "class": "warlock",
-      "specializations": [
-          "demonology",
-          "destruction",
-          "affliction"
-      ]
-  },
-  {
-      "class": "warrior",
-      "specializations": [
-          "arms",
-          "fury",
-          "protection"
-      ]
-  },
-  {
-      "class": "paladin",
-      "specializations": [
-          "holy",
-          "retribution",
-          "protection"
-      ]
-  },
-  {
-      "class": "evoker",
-      "specializations": [
-          "augmentation",
-          "preservation"
-      ]
-  },
-  {
-      "class": "demon_hunter",
-      "specializations": [
-          "havoc",
-          "vengeance"
-      ]
-  },
-  {
-      "class": "druid",
-      "specializations": [
-          "guardian",
-          "feral",
-          "balance",
-          "restoration"
-      ]
-  },
-  {
-      "class": "mage",
-      "specializations": [
-          "arcane",
-          "frost",
-          "fire"
-      ]
-  },
-  {
-      "class": "rogue",
-      "specializations": [
-          "assassination",
-          "outlaw",
-          "subtlety"
-      ]
-  }
-]
-
-const dungeonPool = [
-  {
-    name: 'Cinderbrew Meadery',
-    value:'brew',
-  },
-  {
-    name: 'Darkflame Cleft',
-    value:'dfc',
-  },
-  {
-    name: 'Priory of the Sacred Flame',
-    value:'psf',
-  },
-  {
-    name: 'The Rookery',
-    value:'rook',
-  },
-  {
-    name: 'Operation: Floodgate',
-    value:'fg',
-  },
-  {
-    name: 'Theater of Pain',
-    value:'top',
-  },
-  {
-    name: 'The MOTHERLODE!!',
-    value:'ml',
-  },
-  {
-    name: 'Operation: Mechagon - Workshop',
-    value:'work',
-  },
-]
 
 function App() {
   
@@ -169,7 +31,19 @@ function App() {
   const [ activeSpec, setActiveSpec ] = useState()
   const [ specOptions, setSpecOptions ] = useState([])
   const [ targetItems, setTargetItems ] = useState([])
-  const [ excludeItems, setExcludeItems ] = useState(equipmentTypes)
+  const [ activeItemId, setActiveItemId ] = useState()
+  const [ tooltipVisible, setTooltipVisible ] = useState(false)
+  const [ tooltipPosition, setTooltipPosition ] = useState({top: 0, left: 0})
+  const [ dungeons, setDungeons ] = useState(
+    dungeonPool.map((dungeon, d)=>{
+      return {
+        'name': dungeon['name'],
+        'value': dungeon['value'],
+        'loot': getLootPool(dungeon)
+      }
+    }).sort((a, b)=>a['loot'].length - b['loot'].length)
+  )
+  console.log(dungeons)
 
   // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
   
@@ -184,22 +58,30 @@ function App() {
 
   // Find the class and spec matching target    
   const findClassSpec = (target)=>{
+    // Split out class and spec from div value
     const targetClass = target.split(/_(.*)/s)[1]
     const targetSpec  = target.split(/_(.*)/s)[0]
-
+    // Search for the right class
     const matchClass = specs.find((classSpec)=>{
       return classSpec['className'] === targetClass
     })
-
+    // Search for the right spec
     const matchSpec = matchClass['specialization'].find((spec)=>{
       return spec['specName'] === targetSpec
     })
-
+    // Build a new classSpec dict for state
     return {
       'className': matchClass['className'],
       'classSpec': `${target}`,
       ...matchSpec
     }
+  }
+
+  const findItem = ( id )=>{
+    // TBD: id and item['id'] have different types
+    return loot.find((item)=>{
+      return item['id'] == id
+    })
   }
 
   //////////////////////////// EFFECTS ////////////////////////////
@@ -214,26 +96,8 @@ function App() {
     )
   }, [])
   
-  useEffect(()=>{
-    if (activeSpec) {
-      const activeId =`${activeSpec['specName']}_${activeSpec['className']}`
-    }
-  }, [activeSpec])
-
-  useEffect(()=>{
-    // console.log(targetItems)
-  }, [targetItems])
-
-  useEffect(()=>{
-    // console.log(excludeItems)
-  }, [excludeItems])
-
-
 
   //////////////////////////// EVENT HANDLERS ////////////////////////////
-  const onChange = (e)=>{
-    setActiveSpec(findClassSpec(e.target.value))
-  }
 
   const onClick = (e)=>{
     const targetItem = e.target.id
@@ -243,16 +107,25 @@ function App() {
     } else {
       setTargetItems([...targetItems.filter(i => i !== targetItem)])
     }
-    // Update excludeItems
-    if (excludeItems.includes(targetItem) === false) {
-      setExcludeItems([...excludeItems, targetItem])
-    } else {
-      setExcludeItems([...excludeItems.filter(i => i !== targetItem)])
-    }
   }
   
   const onSpecClick = (e)=>{    
     setActiveSpec(findClassSpec(e.target.id))
+  }
+
+  const onItemEnter = (e)=>{
+    var rect = e.target.getBoundingClientRect();
+    console.log(rect.top, rect.right, rect.bottom, rect.left);
+    setTooltipPosition({
+      top: rect.top,
+      left: rect.right
+    })
+    setTooltipVisible(true)
+    setActiveItemId(e.target.id)
+  }
+
+  const onItemLeave = (e)=>{
+    setActiveItemId(null)
   }
 
   //////////////////////////// DIVS ////////////////////////////
@@ -329,6 +202,24 @@ function App() {
     )
   })
 
+  
+  const lootTooltip = () => {
+    return (
+      <div 
+        className={`lootTooltip ${!tooltipVisible ? 'aa' : 'bb'}`}
+        // style={{top: tooltipPosition.top, left: tooltipPosition.left}}
+        style={{top: 0, left: 0}}
+      >          
+        <p 
+          className={``}
+          id={activeItemId}
+        >
+          { findItem(activeItemId)['name'] }
+        </p>
+      </div>
+    )
+  }
+
   function getLootPool(dungeon) {
     // Get loot which matches the dungeon & targetItems, mainStat, and role
 
@@ -373,9 +264,9 @@ function App() {
   }
 
   const dungeonDivs = dungeonPool.map((dungeon, d)=>{
-    
+    // Get loot pool for this dungeon
     const lootPool = getLootPool(dungeon);
-
+    // Build divs for each item in loot pool
     const lootDivs = lootPool.map((item, i)=>{
       return (
         <div key={i} className={'lootItem'}>
@@ -385,18 +276,30 @@ function App() {
             alt={item['name']}
             id={item['id']}
             className={'lootIcon'}
+            onMouseEnter={onItemEnter}
+            // onMouseLeave={onItemLeave}
           ></img>
-          {/* <p 
-            key={`name${i}`} 
-            className={'lootName'}
-            id={item['id']}
-          >
-            { item['name'] }
-          </p> */}
         </div>
       )
     })
 
+    // const lootTooltips = lootPool.map((item, i)=>{
+    //   return (
+    //     <div 
+    //       key={`tooltip${i}`}
+    //       className={`lootTooltip ${activeItemId == item['id'] ? 'active' : 'inactive'}`}>          
+    //       <p 
+    //         key={`name${i}`} 
+    //         className={`lootName ${activeItemId == item['id'] ? 'active' : 'inactive'}`}
+    //         id={item['id']}
+    //       >
+    //         { item['name'] }
+    //       </p>
+    //     </div>
+    //   )
+    // })
+
+    // Build divs for each dungeon
     return (
       <div key={`group${d}`} className={'dungeonGroup'}>
         <img
@@ -414,9 +317,11 @@ function App() {
         <div className={'lootGroup'}>
           {lootDivs}
         </div>
+        {/* { lootTooltip } */}
       </div>
     )
   })
+
 
   function testFx(){
     console.log(!activeSpec)
