@@ -343,12 +343,19 @@ function App() {
     
     function weaponFilter(item) {
       // if activeSpec selected, weapon must be in class-compatible weapon list
+      // not needed?
       return !activeSpec || activeSpec['weapons'].includes(item['type'])
     }
 
     function specFilter(item) {
       // if activeSpec selected, item must match mainStat and role
-      return !activeSpec || (item['main_stat'].includes(activeSpec['mainStat']) && item['role'].includes(activeSpec['role']))
+      return !activeSpec 
+        || (
+          item['main_stat'].includes(activeSpec['mainStat']) 
+          && item['role'].includes(activeSpec['role']) 
+          && (item['category']===activeSpec['armor'] || weaponFilter(item))
+        )
+
     }
 
     // troubleshooting item filter
