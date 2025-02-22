@@ -160,7 +160,7 @@ function App() {
       <img 
         key={s}
         className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
-        src={ `/images/class_icons/${spec}.png` } 
+        src={ `./images/class_icons/${spec}.png` } 
         alt={ spec }
         id={ spec }
         onClick={onSpecClick}
@@ -183,7 +183,7 @@ function App() {
             <img 
               key={s}
               className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
-              src={ `/images/class_icons/${spec}_${charClass['class']}.png` } 
+              src={ `./images/class_icons/${spec}_${charClass['class']}.png` } 
               alt={ spec }
               id={ spec }
               onClick={onSpecClick}
@@ -200,7 +200,7 @@ function App() {
       <div key={e} className={'equipSlotGroup'}>
         <img 
           key={`img${e}`} 
-          src={`/images/equipment_slots/Ui-paperdoll-slot-${equipmentType}.webp`}
+          src={`./images/equipment_slots/Ui-paperdoll-slot-${equipmentType}.webp`}
           id={equipmentType}
           onClick={onClick}
           className={ `equipSlotIcon ${targetItems.includes(equipmentType) ? 'active' : ''}` }
@@ -283,7 +283,7 @@ function App() {
         <div key={i} className={'lootItem'}>
           <img 
             key={`img${i}`} 
-            src={`/images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
+            src={`./images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
             alt={item['name']}
             id={item['id']}
             className={'lootIcon'}
@@ -316,7 +316,7 @@ function App() {
         <img
           key={`banner${d}`}
           className={`dungeonGroupBanner ${dungeon['lootPool'].length > 0 ? 'active' : 'inactive'}`}
-          src={`/images/dungeons/${dungeon['value']}.png`}
+          src={`./images/dungeons/${dungeon['value']}.png`}
         >
         </img>
         <p
