@@ -134,7 +134,7 @@ function App() {
 
   const onItemEnter = (e)=>{
     var rect = e.target.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
+    // console.log(rect.top, rect.right, rect.bottom, rect.left);
     setTooltipPosition({
       top: rect.top,
       left: rect.right
@@ -144,6 +144,7 @@ function App() {
   }
 
   const onItemLeave = (e)=>{
+    setTooltipVisible(false)
     setActiveItemId(null)
   }
 
@@ -218,16 +219,12 @@ function App() {
   const lootTooltip = () => {
     return (
       <div 
-        className={`lootTooltip ${!tooltipVisible ? 'aa' : 'bb'}`}
+        className={`lootTooltip ${!activeItemId ? 'hidden' : ''}`}
+        id={activeItemId}
         // style={{top: tooltipPosition.top, left: tooltipPosition.left}}
-        style={{top: 0, left: 0}}
+        // style={{top: 0, left: 0}}
       >          
-        <p 
-          className={``}
-          id={activeItemId}
-        >
-          { findItem(activeItemId)['name'] }
-        </p>
+        { activeItemId ? findItem(activeItemId)['name'] : ''}
       </div>
     )
   }
@@ -262,16 +259,15 @@ function App() {
             || weaponFilter(item)
           )
         )
-
     }
 
     // troubleshooting item filter
-    if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
-      loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
-        console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
-        // console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
-      })
-    }
+    // if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
+    //   loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
+    //     console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
+    //     // console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
+    //   })
+    // }
 
     const lootPool = loot.filter((item, i)=>{
       return dungeonFilter(item) && targetItemsFilter(item) && specFilter(item)
@@ -292,7 +288,7 @@ function App() {
             id={item['id']}
             className={'lootIcon'}
             onMouseEnter={onItemEnter}
-            // onMouseLeave={onItemLeave}
+            onMouseLeave={onItemLeave}
           ></img>
         </div>
       )
@@ -332,7 +328,6 @@ function App() {
         <div className={'lootGroup'}>
           {lootDivs}
         </div>
-        {/* { lootTooltip } */}
       </div>
     )
   })
@@ -349,15 +344,18 @@ function App() {
       <h1><img className={'titleLogo'} src={'./thinking.svg'} onClick={testFx}/> What Should I Run? </h1>
       
       <div className={'specContainer'}>
-        {/* <label id="charClassSpinnerLabel">I'm playing a </label>
-        <select id="charClassSpinner" onInput={onChange}>
-          <option value={ null } ></option>
-          { specOptionsDivs }
-        </select> */}
         { specOptionsImgs}
         {/* { groupedSpecOptionsImgs} */}
       </div>
 
+      <div 
+        className={`tooltipContainer ${!activeItemId ? 'hidden' : ''}`}
+        style={{
+          top: tooltipPosition.top + window.scrollY + 40, 
+          left: tooltipPosition.left + window.scrollX - 75}}
+      >
+        { lootTooltip() }
+      </div>
 
       <div className={'container'}>
         <div className={'equipmentContainer'}>

@@ -180,16 +180,30 @@ h2 {
   z-index: 0;
 }
 
-.lootTooltip {
-  display: block; 
+.tooltipContainer {
+  width: 120px;
+  height: 100px;
+  /* display: block;  */
   visibility: visible;
   position: absolute;
-  bottom: -20px;
-  max-width: 120px;
-  z-index: 1;
-  background-color: #272727;
-  border: 1px solid #ff4e89;
+  z-index: 4;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tooltipContainer.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.lootTooltip {
+  z-index: 4;
   text-align: center;
+  background-color: #272727;
+  margin: 0px auto auto auto;
+  padding: 5px;
 }
 
 .lootTooltip.hidden {
