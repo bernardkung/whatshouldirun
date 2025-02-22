@@ -243,6 +243,7 @@ function App() {
       // if no targetItems selected, show all
       return targetItems.length === 0 || targetItems.includes(item['slot'])
     }
+
     
     function weaponFilter(item) {
       // if activeSpec selected, weapon must be in class-compatible weapon list
@@ -255,18 +256,22 @@ function App() {
         || (
           item['main_stat'].includes(activeSpec['mainStat']) 
           && item['role'].includes(activeSpec['role']) 
-          && (item['category']===activeSpec['armor'] || weaponFilter(item))
+          && (
+            item['category']===activeSpec['armor'] 
+            || item['category']==='accessory'
+            || weaponFilter(item)
+          )
         )
 
     }
 
     // troubleshooting item filter
-    // if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
-    //   loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
-    //     console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
-    //     console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
-    //   })
-    // }
+    if (dungeon['value'] === 'brew' && activeSpec && targetItems.length > 0) {
+      loot.filter((item, i)=>dungeonFilter(item)).map((item, i)=>{
+        console.log(item, dungeonFilter(item), targetItemsFilter(item), specFilter(item))
+        // console.log(!activeSpec, item['main_stat'].includes(activeSpec['mainStat']), item['role'].includes(activeSpec['role']))
+      })
+    }
 
     const lootPool = loot.filter((item, i)=>{
       return dungeonFilter(item) && targetItemsFilter(item) && specFilter(item)
