@@ -39,17 +39,16 @@ function App() {
       return {
         'name': dungeon['name'],
         'value': dungeon['value'],
-        'loot': getLootPool(dungeon)
+        'lootPool': getLootPool(dungeon)
       }
-    }).sort((a, b)=>a['loot'].length - b['loot'].length)
+    }).sort((a, b)=>b['lootPool'].length - a['lootPool'].length)
   )
-  console.log(dungeons)
 
   // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
   
   
   //////////////////////////// FUNCTIONS ////////////////////////////
-  const prettifyText = (inStr) => {
+  function prettifyText(inStr) {
     // Split on dash, and capitalize each word
     return inStr.split("_").map((word, w)=>{
       return String(word).charAt(0).toUpperCase() + String(word).slice(1)
@@ -57,10 +56,10 @@ function App() {
   }
 
   // Find the class and spec matching target    
-  const findClassSpec = (target)=>{
+  function findClassSpec (target ) {
     // Split out class and spec from div value
-    const targetClass = target.split(/_(.*)/s)[1]
-    const targetSpec  = target.split(/_(.*)/s)[0]
+    const targetClass = target.split(/-(.*)/s)[1]
+    const targetSpec  = target.split(/-(.*)/s)[0]
     // Search for the right class
     const matchClass = specs.find((classSpec)=>{
       return classSpec['className'] === targetClass
@@ -90,11 +89,24 @@ function App() {
       specs.map((charClass, c)=>{
         const classSpecs = charClass['specialization']
         return classSpecs.map(( spec, s ) => { 
-          return `${spec['specName']}_${charClass['className']}` 
+          return `${spec['specName']}-${charClass['className']}` 
         })
       }).flat()
     )
   }, [])
+
+  useEffect(()=>{
+    // Update lootpool
+    setDungeons(
+      dungeonPool.map((dungeon, d)=>{
+        return {
+          'name': dungeon['name'],
+          'value': dungeon['value'],
+          'lootPool': getLootPool(dungeon)
+        }
+      }).sort((a, b)=>b['lootPool'].length - a['lootPool'].length)
+    )
+  }, [activeSpec, targetItems])
   
 
   //////////////////////////// EVENT HANDLERS ////////////////////////////
@@ -109,8 +121,15 @@ function App() {
     }
   }
   
-  const onSpecClick = (e)=>{    
-    setActiveSpec(findClassSpec(e.target.id))
+  const onSpecClick = (e)=>{   
+    if (!activeSpec) {
+      setActiveSpec(findClassSpec(e.target.id))
+    }
+    else {
+      activeSpec['classSpec'] === e.target.id
+        ? setActiveSpec(null)
+        : setActiveSpec(findClassSpec(e.target.id))
+    }
   }
 
   const onItemEnter = (e)=>{
@@ -129,14 +148,7 @@ function App() {
   }
 
   //////////////////////////// DIVS ////////////////////////////
-  const specOptionsDivs = specOptions.map((spec,s)=>{
-    return (
-      <option value={ spec } key={s} id={spec}>
-        { prettifyText(spec) }
-      </option>
-    )
-  })
-
+  
   const specOptionsImgs = specOptions.map((spec,s)=>{
     const isActiveSpec = activeSpec 
       ? spec === activeSpec['classSpec'] 
@@ -263,11 +275,9 @@ function App() {
     return lootPool
   }
 
-  const dungeonDivs = dungeonPool.map((dungeon, d)=>{
-    // Get loot pool for this dungeon
-    const lootPool = getLootPool(dungeon);
+  const dungeonDivs = dungeons.map((dungeon, d)=>{
     // Build divs for each item in loot pool
-    const lootDivs = lootPool.map((item, i)=>{
+    const lootDivs = dungeon['lootPool'].map((item, i)=>{
       return (
         <div key={i} className={'lootItem'}>
           <img 
@@ -304,13 +314,13 @@ function App() {
       <div key={`group${d}`} className={'dungeonGroup'}>
         <img
           key={`banner${d}`}
-          className={`dungeonGroupBanner ${lootPool.length > 0 ? 'active' : 'inactive'}`}
+          className={`dungeonGroupBanner ${dungeon['lootPool'].length > 0 ? 'active' : 'inactive'}`}
           src={`/images/dungeons/${dungeon['value']}.png`}
         >
         </img>
         <p
           key={d}
-          className={`dungeonGroupTitle ${lootPool.length > 0 ? 'active' : 'inactive'}`}
+          className={`dungeonGroupTitle ${dungeon['lootPool'].length > 0 ? 'active' : 'inactive'}`}
         >
           {dungeon.name}
         </p>
