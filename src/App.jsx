@@ -32,7 +32,6 @@ function App() {
   const [ specOptions, setSpecOptions ] = useState([])
   const [ targetItems, setTargetItems ] = useState([])
   const [ activeItemId, setActiveItemId ] = useState()
-  const [ tooltipVisible, setTooltipVisible ] = useState(false)
   const [ tooltipPosition, setTooltipPosition ] = useState({top: 0, left: 0})
   const [ dungeons, setDungeons ] = useState(
     dungeonPool.map((dungeon, d)=>{
@@ -43,6 +42,7 @@ function App() {
       }
     }).sort((a, b)=>b['lootPool'].length - a['lootPool'].length)
   )
+  const [ expandedDungeons, setExpandedDungeons ] = useState([])
 
   // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
   
@@ -76,11 +76,18 @@ function App() {
     }
   }
 
-  const findItem = ( id )=>{
+  function findItem ( id ) {
     // TBD: id and item['id'] have different types
     return loot.find((item)=>{
       return item['id'] == id
     })
+  }
+
+  function listToggle(list, item) {
+    if (list.includes(item)) {
+      return list.filter(i => i !== item)
+    }
+    return [...list, item]
   }
 
   //////////////////////////// EFFECTS ////////////////////////////
@@ -108,7 +115,9 @@ function App() {
     )
   }, [activeSpec, targetItems])
   
-
+  useEffect(()=>{
+    console.log(expandedDungeons)
+  }, [expandedDungeons])
   //////////////////////////// EVENT HANDLERS ////////////////////////////
 
   const onClick = (e)=>{
@@ -133,19 +142,20 @@ function App() {
   }
 
   const onItemEnter = (e)=>{
-    var rect = e.target.getBoundingClientRect();
-    // console.log(rect.top, rect.right, rect.bottom, rect.left);
+    const rect = e.target.getBoundingClientRect();
     setTooltipPosition({
-      top: rect.top,
-      left: rect.right
+      top: rect.top + window.scrollY + 40,
+      left: rect.right + window.scrollX - 75
     })
-    setTooltipVisible(true)
     setActiveItemId(e.target.id)
   }
 
   const onItemLeave = (e)=>{
-    setTooltipVisible(false)
     setActiveItemId(null)
+  }
+
+  const onExpand = (e)=>{
+    setExpandedDungeons(listToggle(expandedDungeons, e.target.id))
   }
 
   //////////////////////////// DIVS ////////////////////////////
@@ -221,8 +231,6 @@ function App() {
       <div 
         className={`lootTooltip ${!activeItemId ? 'hidden' : ''}`}
         id={activeItemId}
-        // style={{top: tooltipPosition.top, left: tooltipPosition.left}}
-        // style={{top: 0, left: 0}}
       >          
         { activeItemId ? findItem(activeItemId)['name'] : ''}
       </div>
@@ -277,6 +285,9 @@ function App() {
   }
 
   const dungeonDivs = dungeons.map((dungeon, d)=>{
+    // Helper variable for determining dungeon visibility state
+    const dungeonActive = dungeon['lootPool'].length > 0 ? 'active' : 'inactive'
+
     // Build divs for each item in loot pool
     const lootDivs = dungeon['lootPool'].map((item, i)=>{
       return (
@@ -294,7 +305,6 @@ function App() {
       )
     })
 
-    // const lootTooltips = lootPool.map((item, i)=>{
     //   return (
     //     <div 
     //       key={`tooltip${i}`}
@@ -313,21 +323,39 @@ function App() {
     // Build divs for each dungeon
     return (
       <div key={`group${d}`} className={'dungeonGroup'}>
-        <img
-          key={`banner${d}`}
-          className={`dungeonGroupBanner ${dungeon['lootPool'].length > 0 ? 'active' : 'inactive'}`}
-          src={`./images/dungeons/${dungeon['value']}.png`}
+
+        <div 
+          key={`banner${d}`} 
+          className={`dungeonBanner`} 
+          onClick={onExpand}
         >
-        </img>
-        <p
-          key={d}
-          className={`dungeonGroupTitle ${dungeon['lootPool'].length > 0 ? 'active' : 'inactive'}`}
-        >
-          {dungeon.name}
-        </p>
-        <div className={'lootGroup'}>
-          {lootDivs}
+          <img
+            key={`banner${d}`}
+            className={`dungeonBannerImage ${dungeonActive}`}
+            src={`./images/dungeons/${dungeon['value']}.png`}
+            id={dungeon['value']}
+          >
+          </img>
+          <div
+            key={d}
+            className={`dungeonBannerTitle ${dungeonActive}`}
+            id={dungeon['value']}
+          >
+            <h3 id={dungeon['value']}>{dungeon.name}</h3>
+            <img 
+              src={'./angle-down.svg'} 
+              className={`caret ${dungeonActive}`} 
+              id={dungeon['value']}
+            />
+          </div>
         </div>
+
+        <div className={`dungeonContent`}>
+          <div className={'lootGroup'}>
+            {lootDivs}
+          </div>
+        </div>
+
       </div>
     )
   })
@@ -344,15 +372,18 @@ function App() {
       <h1><img className={'titleLogo'} src={'./thinking.svg'} onClick={testFx}/> What Should I Run? </h1>
       
       <div className={'specContainer'}>
-        { specOptionsImgs}
-        {/* { groupedSpecOptionsImgs} */}
+        <h2>I am playing</h2>
+        <div className={'specOptions'}>
+          { specOptionsImgs}
+          {/* { groupedSpecOptionsImgs} */}
+        </div>
       </div>
 
       <div 
         className={`tooltipContainer ${!activeItemId ? 'hidden' : ''}`}
         style={{
-          top: tooltipPosition.top + window.scrollY + 40, 
-          left: tooltipPosition.left + window.scrollX - 75}}
+          top: tooltipPosition.top, 
+          left: tooltipPosition.left}}
       >
         { lootTooltip() }
       </div>
