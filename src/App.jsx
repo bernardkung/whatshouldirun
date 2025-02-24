@@ -158,6 +158,14 @@ function App() {
     setExpandedDungeons(listToggle(expandedDungeons, e.target.id))
   }
 
+  const onAllExpand = (e)=>{
+    if (expandedDungeons.length > 0) {
+      setExpandedDungeons([])
+    } else {
+      setExpandedDungeons(dungeons.map((dungeon, d)=>dungeon['value']))
+    }
+  }
+
   //////////////////////////// DIVS ////////////////////////////
   
   const specOptionsImgs = specOptions.map((spec,s)=>{
@@ -295,14 +303,17 @@ function App() {
         src={`./images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
         alt={item['name']}
         id={item['id']}
-        className={'lootIcon'}
+        className={`lootIcon ${expanded}`}
         onMouseEnter={onItemEnter}
         onMouseLeave={onItemLeave}
       />
     )}
 
-    const lootName = (item, i) => { return (
-      <p className={'lootName'}>{ item['name'] }</p>
+    const lootCard = (item, i) => { return (
+      <div className={`lootCard ${expanded}`}>
+        <h4 className={'lootName'}>{ item['name'] }</h4>
+        <p className={'lootType'}>{ prettifyText(item['type']) }</p>
+      </div>
     )}
 
     // Build divs for each item in loot pool
@@ -310,7 +321,7 @@ function App() {
       return (
         <div key={i} className={'lootItem'}>
           { lootImg(item, i) }
-          { expanded ? lootName(item, i) : null }
+          { expanded ? lootCard(item, i) : null }
         </div>
       )
     })

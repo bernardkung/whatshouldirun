@@ -226,17 +226,76 @@ h3 {
   position: relative;
 }
 
+@keyframes slideDown {
+  from {top: -10px;}
+  to   {top: 0px;}
+}
+
+@keyframes slideUp {
+  from {
+    top: 10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    left: -10px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {left: 0px;}
+  to   {left: -10px;}
+}
+
 .lootIcon {
+  position: relative;
   width: 30px;
   height: 30px;
-  margin: 0;
+  margin: 2px 0px;
   box-sizing: border-box;
   z-index: 0;
+  animation: slideRight 0.3s;
+}
+
+.lootIcon.expanded {
+  animation: slideDown 0.3s;
+}
+
+.lootCard {
+  position: relative;
+  height: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.lootCard.expanded {
+  animation: slideRight 0.3s;
 }
 
 .lootName {
-  margin-left: 8px;
+  margin: 0 0 0 10px;
+  padding: 0;
   font-size: 14px;
+}
+
+.lootType {
+  margin: 0 0 0 12px;
+  padding: 0;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .tooltipContainer {
