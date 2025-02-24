@@ -287,38 +287,33 @@ function App() {
   const dungeonDivs = dungeons.map((dungeon, d)=>{
     // Helper variable for determining dungeon visibility state
     const dungeonActive = dungeon['lootPool'].length > 0 ? 'active' : 'inactive'
+    const expanded = expandedDungeons.includes(dungeon['value']) ? 'expanded' : ''
+
+    const lootImg = (item, i) => { return (
+      <img 
+        key={`img${i}`} 
+        src={`./images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
+        alt={item['name']}
+        id={item['id']}
+        className={'lootIcon'}
+        onMouseEnter={onItemEnter}
+        onMouseLeave={onItemLeave}
+      />
+    )}
+
+    const lootName = (item, i) => { return (
+      <p className={'lootName'}>{ item['name'] }</p>
+    )}
 
     // Build divs for each item in loot pool
     const lootDivs = dungeon['lootPool'].map((item, i)=>{
       return (
         <div key={i} className={'lootItem'}>
-          <img 
-            key={`img${i}`} 
-            src={`./images/equipment_slots/Ui-paperdoll-slot-${item['slot']}.webp`}
-            alt={item['name']}
-            id={item['id']}
-            className={'lootIcon'}
-            onMouseEnter={onItemEnter}
-            onMouseLeave={onItemLeave}
-          ></img>
+          { lootImg(item, i) }
+          { expanded ? lootName(item, i) : null }
         </div>
       )
     })
-
-    //   return (
-    //     <div 
-    //       key={`tooltip${i}`}
-    //       className={`lootTooltip ${activeItemId == item['id'] ? 'active' : 'inactive'}`}>          
-    //       <p 
-    //         key={`name${i}`} 
-    //         className={`lootName ${activeItemId == item['id'] ? 'active' : 'inactive'}`}
-    //         id={item['id']}
-    //       >
-    //         { item['name'] }
-    //       </p>
-    //     </div>
-    //   )
-    // })
 
     // Build divs for each dungeon
     return (
@@ -344,14 +339,14 @@ function App() {
             <h3 id={dungeon['value']}>{dungeon.name}</h3>
             <img 
               src={'./angle-down.svg'} 
-              className={`caret ${dungeonActive}`} 
+              className={`caret ${expanded}`} 
               id={dungeon['value']}
             />
           </div>
         </div>
 
         <div className={`dungeonContent`}>
-          <div className={'lootGroup'}>
+          <div className={`lootGroup ${expanded}`}>
             {lootDivs}
           </div>
         </div>
