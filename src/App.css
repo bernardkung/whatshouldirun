@@ -48,8 +48,9 @@ h1 {
 }
 
 .specIcon.active{
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   /* border-radius: 3px; */
+  filter: grayscale(0)
 }
 
 

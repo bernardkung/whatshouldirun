@@ -1,6 +1,7 @@
 [
   {
     "className": "death_knight",
+    "color": "#C41E3A",
     "specialization": [
       {
         "specName": "blood",
@@ -27,6 +28,7 @@
   },
   {
     "className": "demon_hunter",
+    "color": "#A330C9",
     "specialization": [
       {
         "specName": "havoc",
@@ -46,6 +48,7 @@
   },
   {
     "className": "druid",
+    "color": "#FF7C0A",
     "specialization": [
       {
         "specName": "guardian",
@@ -79,6 +82,7 @@
   },
   {
     "className": "evoker",
+    "color": "#33937F",
     "specialization": [
       {
         "specName": "augmentation",
@@ -98,6 +102,7 @@
   },
   {
     "className": "hunter",
+    "color": "#AAD372",
     "specialization": [
       {
         "specName": "beast_mastery",
@@ -124,6 +129,7 @@
   },
   {
     "className": "mage",
+    "color": "#3FC7EB",
     "specialization": [
       {
         "specName": "arcane",
@@ -150,6 +156,7 @@
   },
   {
     "className": "monk",
+    "color": "#00FF98",
     "specialization": [
       {
         "specName": "windwalker",
@@ -176,6 +183,7 @@
   },
   {
     "className": "paladin",
+    "color": "#F48CBA",
     "specialization": [
       {
         "specName": "holy",
@@ -202,6 +210,7 @@
   },
   {
     "className": "priest",
+    "color": "#FFFFFF",
     "specialization": [
       {
         "specName": "holy",
@@ -228,6 +237,7 @@
   },
   {
     "className": "rogue",
+    "color": "#FFF468",
     "specialization": [
       {
         "specName": "assassination",
@@ -254,6 +264,7 @@
   },
   {
     "className": "shaman",
+    "color": "#0070DD",
     "specialization": [
       {
         "specName": "restoration",
@@ -280,6 +291,7 @@
   },
   {
     "className": "warlock",
+    "color": "#8788EE",
     "specialization": [
       {
         "specName": "demonology",
@@ -306,6 +318,7 @@
   },
   {
     "className": "warrior",
+    "color": "#C69B6D",
     "specialization": [
       {
         "specName": "arms",

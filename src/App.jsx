@@ -49,10 +49,17 @@ function App() {
   
   //////////////////////////// FUNCTIONS ////////////////////////////
   function prettifyText(inStr) {
+    function capitalize(inStr) {
+      return String(inStr).charAt(0).toUpperCase() + String(inStr).slice(1)
+    }
     // Split on dash, and capitalize each word
-    return inStr.split("_").map((word, w)=>{
-      return String(word).charAt(0).toUpperCase() + String(word).slice(1)
-    }).join(" ") 
+    if (inStr) {
+      return inStr
+        .split("_").map(word=>capitalize(word)).join(" ")
+        .split("-").map(word=>capitalize(word)).join(" ") 
+    } else {
+      return ''
+    }
   }
 
   // Find the class and spec matching target    
@@ -72,6 +79,7 @@ function App() {
     return {
       'className': matchClass['className'],
       'classSpec': `${target}`,
+      'classColor': matchClass['color'],
       ...matchSpec
     }
   }
@@ -168,16 +176,34 @@ function App() {
 
   //////////////////////////// DIVS ////////////////////////////
   
+  const specTitle = (spec) => {
+    const isActiveSpec = activeSpec 
+      ? spec === activeSpec['classSpec'] 
+        ? true 
+        : false
+      : false
+    const specColor = findClassSpec(spec)['classColor']
+    const specStyle = {color: isActiveSpec ? `1px solid ${specColor}` : ''}
+
+    return (
+      <h2 style={specStyle}>I am playing {activeSpec ? prettifyText(activeSpec['classSpec']) : ''}</h2>
+    )
+  }
+
   const specOptionsImgs = specOptions.map((spec,s)=>{
     const isActiveSpec = activeSpec 
       ? spec === activeSpec['classSpec'] 
         ? true 
         : false
       : false
+    const specColor = findClassSpec(spec)['classColor']
+    const specStyle = {border: isActiveSpec ? `1px solid ${specColor}` : ''}
+
     return (
       <img 
         key={s}
         className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
+        style={specStyle}
         src={ `./images/class_icons/${spec}.png` } 
         alt={ spec }
         id={ spec }
@@ -378,7 +404,8 @@ function App() {
       <h1><img className={'titleLogo'} src={'./thinking.svg'} onClick={testFx}/> What Should I Run? </h1>
       
       <div className={'specContainer'}>
-        <h2>I am playing</h2>
+        <h2>I am playing {activeSpec ? prettifyText(activeSpec['classSpec']) : ''}</h2>
+        {/* { specTitle(activeSpec) } */}
         <div className={'specOptions'}>
           { specOptionsImgs}
           {/* { groupedSpecOptionsImgs} */}
