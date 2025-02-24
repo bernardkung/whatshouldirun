@@ -428,7 +428,10 @@ function App() {
         </div>
 
         <div className={'dungeonContainer'}>
-          <h2>I should run</h2>
+          <div className={`dungeonContainerBanner`}>
+            <h2 className={`dungeonContainerTitle`}>I should run</h2>
+            <img src={'./angle-double-down.svg'} className={`doubleCaret ${expandedDungeons.length > 0 ? 'expanded':''}`} onClick={onAllExpand}/>
+          </div>
           { dungeonDivs }
         </div>
 

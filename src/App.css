@@ -112,6 +112,19 @@ h2 {
   filter: drop-shadow(5px 5px 10px #1b1b1b);
 }
 
+.dungeonContainerBanner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  width: 100%;
+}
+
+.dungeonContainerTitle {
+  width: 100%;
+}
+
 .dungeonGroup {
   position: relative;
   display: block;
@@ -187,6 +200,19 @@ h3 {
   from {transform:rotate(-180deg);}
   to {transform:rotate(0deg);}
 }
+
+.doubleCaret {
+  height: 36px;
+  margin-right: 4px;
+  transform: rotate(0deg);
+  animation: reverse-rotate 0.3s;
+}
+
+.doubleCaret.expanded {
+  animation: rotate 0.3s;
+  transform: rotate(180deg);
+}
+
 
 .caret {
   height: 36px;
