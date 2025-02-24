@@ -435,8 +435,13 @@ function App() {
           { dungeonDivs }
         </div>
 
-
       </div>
+      
+      <div className={'footer'}>
+          <p>Built by <a href='https://bernardkung.github.io/'>Bernard Kung</a></p>
+          <p>Icons are open-source <a href="https://www.iconshock.com/freeicons/collection/primeicons">primeicons</a> from Iconshock</p>
+          <p>World of Warcraft-related art sourced from <a href="https://www.wowhead.com/wow/retail">Wowhead</a></p>
+        </div>
 
 
     </>

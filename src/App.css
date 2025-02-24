@@ -125,6 +125,18 @@ h2 {
   width: 100%;
 }
 
+.doubleCaret {
+  height: 36px;
+  margin-right: 4px;
+  transform: rotate(0deg);
+  animation: reverse-rotate 0.3s;
+}
+
+.doubleCaret.expanded {
+  animation: rotate 0.3s;
+  transform: rotate(180deg);
+}
+
 .dungeonGroup {
   position: relative;
   display: block;
@@ -200,19 +212,6 @@ h3 {
   from {transform:rotate(-180deg);}
   to {transform:rotate(0deg);}
 }
-
-.doubleCaret {
-  height: 36px;
-  margin-right: 4px;
-  transform: rotate(0deg);
-  animation: reverse-rotate 0.3s;
-}
-
-.doubleCaret.expanded {
-  animation: rotate 0.3s;
-  transform: rotate(180deg);
-}
-
 
 .caret {
   height: 36px;
@@ -355,4 +354,13 @@ h3 {
 .lootTooltip.hidden {
   display: none;
   visibility: hidden;
+}
+
+.footer {
+  margin: 30px 0 20px 0;
+  font-size: 12px;
+}
+
+.footer > p {
+  margin: 2px;
 }
