@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import loot from './tww_s2_loot.json'
 import specs from './specs.json'
-import charClasses from './class_specs.json'
+// import charClasses from './class_specs.json'
 import dungeonPool from './tww_s2_dungeons.json'
 
 const equipmentTypes = [
@@ -29,7 +29,6 @@ function App() {
   
   //////////////////////////// STATES ////////////////////////////
   const [ activeSpec, setActiveSpec ] = useState()
-  const [ specOptions, setSpecOptions ] = useState([])
   const [ targetItems, setTargetItems ] = useState([])
   const [ activeItemId, setActiveItemId ] = useState()
   const [ tooltipPosition, setTooltipPosition ] = useState({top: 0, left: 0})
@@ -99,16 +98,6 @@ function App() {
   }
 
   //////////////////////////// EFFECTS ////////////////////////////
-  useEffect(()=>{
-    setSpecOptions(
-      specs.map((charClass, c)=>{
-        const classSpecs = charClass['specialization']
-        return classSpecs.map(( spec, s ) => { 
-          return `${spec['specName']}-${charClass['className']}` 
-        })
-      }).flat()
-    )
-  }, [])
 
   useEffect(()=>{
     // Update lootpool
@@ -138,7 +127,7 @@ function App() {
     }
   }
   
-  const onSpecClick = (e)=>{   
+  const onSpecClick = (e)=>{
     if (!activeSpec) {
       setActiveSpec(findClassSpec(e.target.id))
     }
@@ -190,53 +179,73 @@ function App() {
     )
   }
 
-  const specOptionsImgs = specOptions.map((spec,s)=>{
-    const isActiveSpec = activeSpec 
-      ? spec === activeSpec['classSpec'] 
-        ? true 
+  const specOptionsImgs = specs.map((charClass,c)=>{
+    return (charClass['specialization'].map((spec, s) => {
+      const charSpec = `${spec['specName']}-${charClass['className']}`
+      const isActiveSpec = activeSpec 
+        ? charSpec === activeSpec['classSpec'] 
+          ? true 
+          : false
         : false
-      : false
-    const specColor = findClassSpec(spec)['classColor']
-    const specStyle = {border: isActiveSpec ? `1px solid ${specColor}` : ''}
+      const specColor = findClassSpec(charSpec)['classColor']
+      const specStyle = {border: isActiveSpec ? `1px solid ${specColor}` : ''}
 
-    return (
-      <img 
-        key={s}
-        className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
-        style={specStyle}
-        src={ `./images/class_icons/${spec}.png` } 
-        alt={ spec }
-        id={ spec }
-        onClick={onSpecClick}
-      />
-    )
+      return (
+        <img 
+          key={s}
+          className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
+          style={specStyle}
+          src={ `./images/class_icons/${charSpec}.png` } 
+          alt={ spec }
+          id={ spec }
+          onClick={onSpecClick}
+        />
+      )
+    }))
   })
 
   
-  const groupedSpecOptionsImgs = charClasses.map((charClass,c)=>{
+  const groupedSpecOptionsImgs = specs.map((charClass,c)=>{
+
+    // Build the spec icons for this class
+    const specImgs = charClass['specialization'].map((spec, s) => {
+      const charSpec = `${spec['specName']}-${charClass['className']}`
+      const isActiveSpec = activeSpec 
+        ? charSpec === activeSpec['classSpec'] 
+          ? true 
+          : false
+        : false
+      const specColor = findClassSpec(charSpec)['classColor']
+      const specStyle = {border: isActiveSpec ? `1px solid ${specColor}` : ''}
+
+      return (
+        <img 
+          key={s}
+          className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
+          style={specStyle}
+          src={ `./images/class_icons/${charSpec}.png` } 
+          alt={ charSpec }
+          id={ charSpec }
+          onClick={onSpecClick}
+        />
+      )
+    })
+
+    const classTitle = ()=>{
+      return (
+        <h2 style={{color:charClass['color']}} className='classTitle'>{ prettifyText(charClass['className']) }</h2>
+      )
+    }
+    // Build a group for this class' spec icons
     return (
-      <div key={c}>
-        <h2>{ prettifyText(charClass['class']) }</h2>
-        { charClass['specializations'].map((spec, s)=>{
-          const isActiveSpec = activeSpec 
-            ? spec === activeSpec['specName'] 
-              ? true 
-              : false
-            : false
-          return (
-            <img 
-              key={s}
-              className={`specIcon ${isActiveSpec ? 'active' : 'inactive'}`}
-              src={ `./images/class_icons/${spec}_${charClass['class']}.png` } 
-              alt={ spec }
-              id={ spec }
-              onClick={onSpecClick}
-            />
-          )
-        })}
+      <div key={c} className={`classGroup`}>
+      { classTitle() }
+        <div key={c} className={`specGroup`}>
+          { specImgs }
+        </div>
       </div>
     ) 
-  })
+})
 
 
   const equipmentDivs = equipmentTypes.map((equipmentType, e)=>{
@@ -297,7 +306,7 @@ function App() {
           && item['role'].includes(activeSpec['role']) 
           && (
             item['category']===activeSpec['armor'] 
-            || item['category']==='accessory'
+            || ['accessory', 'trinket'].includes(item['category'])
             || weaponFilter(item)
           )
         )
@@ -393,22 +402,18 @@ function App() {
   })
 
 
-  function testFx(){
-    console.log(!activeSpec)
-  }
-
 
   // App Body
   return (
     <>
-      <h1><img className={'titleLogo'} src={'./thinking.svg'} onClick={testFx}/> What Should I Run? </h1>
+      <h1><img className={'titleLogo'} src={'./thinking.svg'} /> What Should I Run? </h1>
       
       <div className={'specContainer'}>
         <h2>I am playing {activeSpec ? prettifyText(activeSpec['classSpec']) : ''}</h2>
         {/* { specTitle(activeSpec) } */}
         <div className={'specOptions'}>
-          { specOptionsImgs}
-          {/* { groupedSpecOptionsImgs} */}
+          {/* { specOptionsImgs} */}
+          { groupedSpecOptionsImgs}
         </div>
       </div>
 
