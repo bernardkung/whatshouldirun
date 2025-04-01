@@ -32,15 +32,7 @@ function App() {
   const [ targetItems, setTargetItems ] = useState([])
   const [ activeItemId, setActiveItemId ] = useState()
   const [ tooltipPosition, setTooltipPosition ] = useState({top: 0, left: 0})
-  const [ dungeons, setDungeons ] = useState(
-    dungeonPool.map((dungeon, d)=>{
-      return {
-        'name': dungeon['name'],
-        'value': dungeon['value'],
-        'lootPool': getLootPool(dungeon)
-      }
-    }).sort((a, b)=>b['lootPool'].length - a['lootPool'].length)
-  )
+  const [ dungeons, setDungeons ] = useState(updateDungeons())
   const [ expandedDungeons, setExpandedDungeons ] = useState([])
 
   // const equipmentIconLinks = equipmentTypes.map((equipmentType, e=>`Ui-paperdoll-slot-${equipmentType}.webp`))
@@ -60,8 +52,7 @@ function App() {
       return ''
     }
   }
-
-  // Find the class and spec matching target    
+   
   function findClassSpec (target ) {
     // Split out class and spec from div value
     const targetClass = target.split(/-(.*)/s)[1]
@@ -97,19 +88,26 @@ function App() {
     return [...list, item]
   }
 
+  function countTargetItems (dungeon) {
+    // Count the number of target items in the loot pool
+    return dungeon['lootPool'].filter(item=>item['target']).length
+  }
+
+  function updateDungeons() {
+    return dungeonPool.map((dungeon, d)=>{
+      return {
+        'name': dungeon['name'],
+        'value': dungeon['value'],
+        'lootPool': getLootPool(dungeon)
+      }
+    }).sort((a, b)=>countTargetItems(b) - countTargetItems(a))
+  }
+
   //////////////////////////// EFFECTS ////////////////////////////
 
   useEffect(()=>{
     // Update lootpool
-    setDungeons(
-      dungeonPool.map((dungeon, d)=>{
-        return {
-          'name': dungeon['name'],
-          'value': dungeon['value'],
-          'lootPool': getLootPool(dungeon)
-        }
-      }).sort((a, b)=>b['lootPool'].length - a['lootPool'].length)
-    )
+    setDungeons(updateDungeons())
   }, [activeSpec, targetItems])
   
   useEffect(()=>{
@@ -320,8 +318,11 @@ function App() {
     //   })
     // }
 
+    // Determine all items in the dungeon for the active spec
     const lootPool = loot.filter((item, i)=>{
-      return dungeonFilter(item) && targetItemsFilter(item) && specFilter(item)
+      return dungeonFilter(item) && specFilter(item)
+    }).map((item, i)=>{
+      return {...item, 'target': targetItemsFilter(item)}
     })
 
     return lootPool
@@ -353,6 +354,9 @@ function App() {
 
     // Build divs for each item in loot pool
     const lootDivs = dungeon['lootPool'].map((item, i)=>{
+      if (!item['target']) {
+        return null
+      }
       return (
         <div key={i} className={'lootItem'}>
           { lootImg(item, i) }
@@ -361,6 +365,11 @@ function App() {
       )
     })
 
+    console.log(
+      dungeon['lootPool'], 
+      dungeon['lootPool'].filter(item=>item['target']),
+      countTargetItems(dungeon),
+    )
     // Build divs for each dungeon
     return (
       <div key={`group${d}`} className={'dungeonGroup'}>
@@ -382,7 +391,7 @@ function App() {
             className={`dungeonBannerTitle ${dungeonActive}`}
             id={dungeon['value']}
           >
-            <h3 id={dungeon['value']}>{dungeon.name}</h3>
+            <h3 id={dungeon['value']}>{dungeon.name} ({countTargetItems(dungeon)}/{dungeon['lootPool'].length})</h3>
             <img 
               src={'./angle-down.svg'} 
               className={`caret ${expanded}`} 
@@ -400,7 +409,6 @@ function App() {
       </div>
     )
   })
-
 
 
   // App Body
@@ -443,10 +451,10 @@ function App() {
       </div>
       
       <div className={'footer'}>
-          <p>Built by <a href='https://bernardkung.github.io/'>Bernard Kung</a></p>
-          <p>Icons are open-source <a href="https://www.iconshock.com/freeicons/collection/primeicons">primeicons</a> from Iconshock</p>
-          <p>World of Warcraft-related art sourced from <a href="https://www.wowhead.com/wow/retail">Wowhead</a></p>
-        </div>
+        <p>Built by <a href='https://bernardkung.github.io/'>Bernard Kung</a></p>
+        <p>Icons are open-source <a href="https://www.iconshock.com/freeicons/collection/primeicons">primeicons</a> from Iconshock</p>
+        <p>World of Warcraft-related art sourced from <a href="https://www.wowhead.com/wow/retail">Wowhead</a></p>
+      </div>
 
 
     </>
